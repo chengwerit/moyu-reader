@@ -31,3 +31,12 @@ Desktop.ini
 # 设置里的「导出完整备份」会生成这类文件，含全部正文，别误提交
 moyu-backup-*.json
 backup-*.json
+
+# ── 打包中间产物 ─────────────────────────────────────────
+.pack/
+
+# ── WorkBuddy 工作记忆里的临时文件 ──────────────────────
+# 注意：.workbuddy/memory/ 与 .workbuddy/skills/ 是有价值的项目上下文，
+# 刻意入库，方便协作者与 AI 助手共享。只排除 tmp 里的临时产物。
+.workbuddy/tmp/
+.workbuddy/**/*.tmp
