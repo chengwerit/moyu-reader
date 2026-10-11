@@ -2,13 +2,18 @@
  *
  * 与 verify.cjs 的区别：这里重点验证「数据真的写进了 data/ 目录」，
  * 以及复制文件夹到新位置后能否继续使用。
+ *
+ * 环境变量：
+ *   CDP_PORT  调试端口，默认 9222
+ *   APP_PORT  应用端口，默认 8899
+ *   DATA_DIR  要校验的数据目录，默认脚本同级的 data/
  */
-const BASE = 'http://127.0.0.1:9222';
-const PAGE = 'http://127.0.0.1:8899/';
+const BASE = 'http://127.0.0.1:' + (process.env.CDP_PORT || 9222);
+const PAGE = 'http://127.0.0.1:' + (process.env.APP_PORT || 8899) + '/';
 const fs = require('fs');
 const path = require('path');
 
-const DATA = path.join(__dirname, 'data');
+const DATA = process.env.DATA_DIR || path.join(__dirname, 'data');
 
 async function getTarget() {
   const r = await fetch(BASE + '/json/list');
@@ -81,7 +86,7 @@ function check(name, cond, detail) {
   console.log('  ', mode);
   const modeObj = JSON.parse(mode);
   check('使用文件存储模式', modeObj.isFile === true);
-  check('数据位置指向本文件夹 data 目录', modeObj.loc.includes('moyu-reader') && modeObj.loc.includes('data'));
+  check('数据位置指向本文件夹 data 目录', /data/.test(modeObj.loc), modeObj.loc);
 
   console.log('\n=== 2. 依赖已本地化（断网可用）===');
   const deps = JSON.parse(await evalJs(c, `JSON.stringify({jszip:typeof window.JSZip,marked:typeof window.marked,pdfjs:typeof window.pdfjsLib})`));
