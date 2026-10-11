@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="paper">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>墨语 · 本地优先的网页阅读器</title>
+<meta name="description" content="免费、无需注册、数据留在本地的网页电子书阅读器。支持 EPUB、PDF、TXT、Markdown、DOCX、FB2、MOBI 等格式。">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="stylesheet" href="./css/app.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════ 书架 ══════════ -->
+<div id="shelfView" class="view active">
+  <header class="app-header">
+    <div class="brand">
+      <div class="brand-mark">墨</div>
+      <div class="brand-text">
+        <h1>墨语</h1>
+        <p>本地优先的网页阅读器</p>
+      </div>
+    </div>
+    <div class="header-tools">
+      <div class="search-box">
+        <input id="shelfSearch" type="search" placeholder="搜索书名或作者" aria-label="搜索书架">
+      </div>
+      <select id="shelfFilter" aria-label="筛选">
+        <option value="all">全部</option>
+        <option value="reading">在读</option>
+        <option value="unread">未读</option>
+        <option value="done">读完</option>
+        <option value="list">列表视图</option>
+      </select>
+      <button class="btn ghost" id="btnRestore" title="从 JSON 备份恢复">恢复</button>
+      <button class="btn" id="btnSettings" title="设置">设置</button>
+      <button class="btn primary" id="btnImport">导入书籍</button>
+    </div>
+  </header>
+
+  <div class="quote-bar"><span class="quote-mark">「</span><span id="dailyQuote"></span></div>
+
+  <main id="shelfGrid" class="shelf-grid"></main>
+
+  <footer class="app-footer">
+    <span id="shelfCount">—</span>
+    <span class="sep">·</span>
+    <span id="storageInfo">—</span>
+    <span class="sep">·</span>
+    <span>数据保存在 <span id="storageWhere">本文件夹</span></span>
+  </footer>
+  <button class="fab" id="btnImportEmpty" title="导入书籍" aria-label="导入书籍">+</button>
+</div>
+
+<!-- ══════════════════════════════════════════════════ 阅读 ══════════ -->
+<div id="readView" class="view">
+
+  <!-- 顶部栏 -->
+  <header class="reader-top">
+    <button class="icon-btn lg" id="btnBack" title="返回书架" aria-label="返回">←</button>
+    <div class="reader-meta">
+      <strong id="readTitle">—</strong>
+      <span id="readAuthor"></span>
+    </div>
+    <div class="reader-tools">
+      <button class="tool-btn" data-panel="toc" title="目录 (T)"><span class="ti">☰</span><em>目录</em></button>
+      <button class="tool-btn" data-panel="search" title="搜索 (F)"><span class="ti">⌕</span><em>搜索</em></button>
+      <button class="tool-btn" data-panel="notes" title="笔记 (N)"><span class="ti">✎</span><em>笔记</em></button>
+      <button class="tool-btn" data-panel="ai" title="AI 伴读 (A)"><span class="ti">✦</span><em>AI</em></button>
+      <button class="tool-btn" id="btnSpeak" title="朗读"><span class="ti">▶</span><em>朗读</em></button>
+      <button class="tool-btn" id="btnZen" title="沉浸模式 (Z)"><span class="ti">⛶</span><em>沉浸</em></button>
+    </div>
+  </header>
+
+  <!-- 左侧面板 -->
+  <aside class="side-panel">
+    <div class="panel" id="tocPanel">
+      <div class="panel-head"><h3>目录</h3><button class="panel-close" aria-label="关闭">✕</button></div>
+      <div class="panel-body" id="tocList"></div>
+    </div>
+    <div class="panel" id="searchPanel">
+      <div class="panel-head"><h3>全文搜索</h3><button class="panel-close" aria-label="关闭">✕</button></div>
+      <div class="panel-search"><input id="searchInput" type="search" placeholder="搜索全书内容…" aria-label="搜索"></div>
+      <div class="panel-body" id="searchResults"></div>
+    </div>
+    <div class="panel" id="notesPanel">
+      <div class="panel-head"><h3>书签与笔记</h3><button class="panel-close" aria-label="关闭">✕</button></div>
+      <div class="panel-body" id="notesList"></div>
+    </div>
+  </aside>
+
+  <!-- 正文 -->
+  <main class="reader-main">
+    <article id="readerBody" class="reader-body"></article>
+    <button class="page-nav prev" id="btnPrev" title="上一页 (←)">‹</button>
+    <button class="page-nav next" id="btnNext" title="下一页 (→)">›</button>
+  </main>
+
+  <!-- AI 伴读 -->
+  <aside class="side-panel right" id="aiPanel">
+    <div class="panel-head">
+      <h3>AI 伴读</h3>
+      <div class="head-actions">
+        <button class="mini-btn" id="btnFix" title="修正本章错别字">纠错</button>
+        <button class="mini-btn" id="btnClearAi">清空</button>
+        <button class="panel-close" aria-label="关闭">✕</button>
+      </div>
+    </div>
+    <div class="task-row">
+      <button data-task="explain">解释</button>
+      <button data-task="summary">总结</button>
+      <button data-task="keywords">关键词</button>
+      <button data-task="translate">翻译</button>
+      <button data-task="continue">续写</button>
+    </div>
+    <div class="panel-body" id="aiMessages"></div>
+    <div class="ai-input">
+      <textarea id="aiInput" rows="2" placeholder="问点什么…（Enter 发送）"></textarea>
+      <button id="aiSend" title="发送">↑</button>
+      <button id="aiStop" title="停止">■</button>
+    </div>
+  </aside>
+
+  <!-- 底部进度 -->
+  <footer class="reader-bottom">
+    <div class="progress-track" id="readProgressBar"><i id="readProgress"></i></div>
+    <div class="bottom-info">
+      <span id="chapterIndicator">—</span>
+      <span class="sep">·</span>
+      <span id="pageIndicator">—</span>
+    </div>
+    <div class="bottom-tools">
+      <button class="mini-btn" id="btnHighlight">划线</button>
+      <button class="mini-btn" id="btnBookmark">书签</button>
+      <button class="mini-btn" id="btnDouble">双页</button>
+      <select id="fontSelect" aria-label="字体">
+        <option value="serif">宋体</option>
+        <option value="sans">黑体</option>
+        <option value="kai">楷体</option>
+      </select>
+      <input type="range" id="fontSize" min="14" max="30" step="1" value="19" title="字号">
+      <span id="fontSizeLabel" class="tiny">19px</span>
+      <input type="range" id="lineHeight" min="1.4" max="2.6" step="0.1" value="1.9" title="行距">
+      <span id="fontLabel" class="tiny">宋体</span>
+    </div>
+  </footer>
+</div>
+
+<!-- ══════════════════════════════════════════════ 设置弹窗 ══════════ -->
+<div class="modal" id="settingsModal">
+  <div class="modal-card">
+    <div class="modal-head">
+      <h2>设置</h2>
+      <button class="panel-close" id="settingsClose" aria-label="关闭">✕</button>
+    </div>
+
+    <div class="modal-body">
+      <section class="set-group">
+        <h4>阅读主题</h4>
+        <div class="theme-row">
+          <button class="theme-dot" data-theme="paper" title="宣纸"></button>
+          <button class="theme-dot" data-theme="white" title="素白"></button>
+          <button class="theme-dot" data-theme="green" title="护眼"></button>
+          <button class="theme-dot" data-theme="gray" title="雅灰"></button>
+          <button class="theme-dot" data-theme="night" title="夜间"></button>
+        </div>
+        <p class="hint">排版参数在阅读页底部的工具条里调整。</p>
+      </section>
+
+      <section class="set-group">
+        <h4>AI 伴读</h4>
+        <p class="hint">采用自带 Key 模式。请求直接从你的浏览器发往所填服务，不经过任何中转。Key 只保存在本机。</p>
+        <select id="aiPreset" aria-label="服务商预设">
+          <option value="">选择服务商预设…</option>
+          <option>DeepSeek</option><option>OpenAI</option><option>通义千问</option>
+          <option>Kimi</option><option>智谱 GLM</option>
+        </select>
+        <input id="aiBaseUrl" type="url" placeholder="接口地址，如 https://api.deepseek.com/v1">
+        <input id="aiApiKey" type="password" placeholder="API Key">
+        <input id="aiModel" type="text" placeholder="模型名，如 deepseek-chat">
+        <div class="btn-row">
+          <button class="btn" id="btnTestAi">测试连接</button>
+          <button class="btn primary" id="btnSaveAi">保存配置</button>
+        </div>
+      </section>
+
+      <section class="set-group">
+        <h4>数据存放位置</h4>
+        <p class="hint" id="storageLocationHint">正在检测…</p>
+        <p class="hint" id="migrateBox" style="display:none">
+          检测到旧版本存放在浏览器里的书库，可迁移到本文件夹。
+          <button class="mini-btn" id="btnMigrate">立即迁移</button>
+        </p>
+      </section>
+
+      <section class="set-group">
+        <h4>数据备份</h4>
+        <p class="hint">数据保存在本文件夹的 data 目录里，整个文件夹复制到别的电脑即可继续使用。清理浏览器缓存不影响数据，但仍建议定期导出备份。</p>
+        <div class="progress-bar"><i id="backupBar"></i></div>
+        <div class="btn-row">
+          <button class="btn" id="btnExport">导出完整备份</button>
+          <button class="btn" id="btnPersist">申请持久化存储</button>
+        </div>
+      </section>
+
+      <section class="set-group">
+        <h4>支持格式</h4>
+        <p class="hint">EPUB、PDF（含扫描件 OCR 层缺失时的图像回退）、DOCX、TXT、Markdown、HTML、FB2、RTF、MOBI / AZW / AZW3 / PRC。带 DRM 的文件无法解析，请使用无保护的版本。</p>
+      </section>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════ 全局元素 ══════════ -->
+<div class="drop-zone" id="dropZone"><div class="drop-inner"><div class="drop-icon">⇩</div><p>松开即可导入书籍</p><small>支持 EPUB / PDF / TXT / Markdown / DOCX / FB2 / MOBI 等</small></div></div>
+
+<div class="import-overlay" id="importOverlay">
+  <div class="import-card">
+    <h3>正在导入</h3>
+    <p id="importLabel">—</p>
+    <div class="progress-bar"><i id="importBar"></i></div>
+    <small>首次解析大文件可能需要几秒</small>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<!-- 隐藏的文件输入：导入书籍用，accept 覆盖全部支持格式 -->
+<input type="file" id="fileInput" multiple hidden
+  accept=".epub,.pdf,.docx,.doc,.txt,.md,.markdown,.html,.htm,.xhtml,.fb2,.rtf,.mobi,.azw,.azw3,.prc">
+<!-- 隐藏的文件输入：恢复备份用，必须在弹窗外，避免受弹窗开关影响 -->
+<input type="file" id="backupInput" accept="application/json,.json" hidden>
+
+<!-- 第三方依赖：已本地化到 lib/ 目录，断网也能用 -->
+<script src="./lib/jszip.min.js"></script>
+<script src="./lib/marked.min.js"></script>
+<script src="./lib/pdf.min.js"></script>
+<script type="module" src="./js/app.js"></script>
+</body>
+</html>

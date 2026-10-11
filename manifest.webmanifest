@@ -1,0 +1,18 @@
+{
+  "name": "墨语 · 本地优先网页阅读器",
+  "short_name": "墨语",
+  "description": "免费、无需注册、数据留在本地的网页电子书阅读器",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#faf8f4",
+  "theme_color": "#8a6a4a",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='112' fill='%238a6a4a'/%3E%3Ctext x='256' y='360' font-size='280' text-anchor='middle' fill='white' font-family='serif'%3E%E5%A2%A8%3C/text%3E%3C/svg%3E",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
