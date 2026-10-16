@@ -1,18 +1,1 @@
-{
-  "name": "墨语 · 本地优先网页阅读器",
-  "short_name": "墨语",
-  "description": "免费、无需注册、数据留在本地的网页电子书阅读器",
-  "start_url": "./",
-  "display": "standalone",
-  "background_color": "#faf8f4",
-  "theme_color": "#8a6a4a",
-  "lang": "zh-CN",
-  "icons": [
-    {
-      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='112' fill='%238a6a4a'/%3E%3Ctext x='256' y='360' font-size='280' text-anchor='middle' fill='white' font-family='serif'%3E%E5%A2%A8%3C/text%3E%3C/svg%3E",
-      "sizes": "512x512",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
-    }
-  ]
-}
+ew0KICAibmFtZSI6ICLloqjor60gwrcg5pys5Zyw5LyY5YWI572R6aG16ZiF6K+75ZmoIiwNCiAgInNob3J0X25hbWUiOiAi5aKo6K+tIiwNCiAgImRlc2NyaXB0aW9uIjogIuWFjei0ueOAgeaXoOmcgOazqOWGjOOAgeaVsOaNrueVmeWcqOacrOWcsOeahOe9kemhteeUteWtkOS5pumYheivu+WZqCIsDQogICJzdGFydF91cmwiOiAiLi8iLA0KICAiZGlzcGxheSI6ICJzdGFuZGFsb25lIiwNCiAgImJhY2tncm91bmRfY29sb3IiOiAiI2ZhZjhmNCIsDQogICJ0aGVtZV9jb2xvciI6ICIjOGE2YTRhIiwNCiAgImxhbmciOiAiemgtQ04iLA0KICAiaWNvbnMiOiBbDQogICAgew0KICAgICAgInNyYyI6ICJkYXRhOmltYWdlL3N2Zyt4bWwsJTNDc3ZnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zycgdmlld0JveD0nMCAwIDUxMiA1MTInJTNFJTNDcmVjdCB3aWR0aD0nNTEyJyBoZWlnaHQ9JzUxMicgcng9JzExMicgZmlsbD0nJTIzOGE2YTRhJy8lM0UlM0N0ZXh0IHg9JzI1NicgeT0nMzYwJyBmb250LXNpemU9JzI4MCcgdGV4dC1hbmNob3I9J21pZGRsZScgZmlsbD0nd2hpdGUnIGZvbnQtZmFtaWx5PSdzZXJpZiclM0UlRTUlQTIlQTglM0MvdGV4dCUzRSUzQy9zdmclM0UiLA0KICAgICAgInNpemVzIjogIjUxMng1MTIiLA0KICAgICAgInR5cGUiOiAiaW1hZ2Uvc3ZnK3htbCIsDQogICAgICAicHVycG9zZSI6ICJhbnkgbWFza2FibGUiDQogICAgfQ0KICBdDQp9DQo=
