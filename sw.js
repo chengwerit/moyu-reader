@@ -1,1 +1,64 @@
-Lyog5aKo6K+tIMK3IFNlcnZpY2UgV29ya2VyDQogICAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0NCiAgIOS+nei1luW6k+W3suacrOWcsOWMluWIsCBsaWIv77yM5Zug5q2k56a757q/5a6M5YWo5Y+v55So77yM5peg6ZyA57yT5a2Y5Lu75L2VIENETiDotYTmupDjgIINCg0KICAg5rOo5oSP77ya6L+Z6YeM5Y+q57yT5a2Y44CM5bqU55So5aOz5bGC44CN6L+Z57G76Z2Z5oCB5paH5Lu277yM57ud5LiN56KwIC9hcGkvIOaVsOaNruaOpeWPo+KAlOKAlA0KICAg5LiA5pem5oqK5Lmm57GN5pWw5o2u57yT6L+bIENhY2hlIFN0b3JhZ2XvvIznlKjmiLfkvJror7vliLDov4fmnJ/lhoXlrrnvvIzkuJTpmr7ku6XmjpLmn6XjgIINCiovDQoNCmNvbnN0IENBQ0hFID0gJ21veXUtdjInOw0KY29uc3QgU0hFTEwgPSBbDQogICcuLycsDQogICcuL2luZGV4Lmh0bWwnLA0KICAnLi9jc3MvYXBwLmNzcycsDQogICcuL2pzL2FwcC5qcycsDQogICcuL2pzL2RiLmpzJywNCiAgJy4vanMvZW5naW5lLmpzJywNCiAgJy4vanMvcGFyc2Vycy5qcycsDQogICcuL2pzL2FpLmpzJywNCiAgJy4vbGliL2pzemlwLm1pbi5qcycsDQogICcuL2xpYi9tYXJrZWQubWluLmpzJywNCiAgJy4vbGliL3BkZi5taW4uanMnLA0KICAnLi9saWIvcGRmLndvcmtlci5taW4uanMnLA0KICAnLi9tYW5pZmVzdC53ZWJtYW5pZmVzdCcNCl07DQoNCnNlbGYuYWRkRXZlbnRMaXN0ZW5lcignaW5zdGFsbCcsIGUgPT4gew0KICBlLndhaXRVbnRpbCgNCiAgICBjYWNoZXMub3BlbihDQUNIRSkNCiAgICAgIC50aGVuKGMgPT4gUHJvbWlzZS5hbGxTZXR0bGVkKFNIRUxMLm1hcCh1ID0+IGMuYWRkKHUpKSkpDQogICAgICAudGhlbigoKSA9PiBzZWxmLnNraXBXYWl0aW5nKCkpDQogICk7DQp9KTsNCg0Kc2VsZi5hZGRFdmVudExpc3RlbmVyKCdhY3RpdmF0ZScsIGUgPT4gew0KICBlLndhaXRVbnRpbCgNCiAgICBjYWNoZXMua2V5cygpDQogICAgICAudGhlbihrZXlzID0+IFByb21pc2UuYWxsKGtleXMuZmlsdGVyKGsgPT4gayAhPT0gQ0FDSEUpLm1hcChrID0+IGNhY2hlcy5kZWxldGUoaykpKSkNCiAgICAgIC50aGVuKCgpID0+IHNlbGYuY2xpZW50cy5jbGFpbSgpKQ0KICApOw0KfSk7DQoNCnNlbGYuYWRkRXZlbnRMaXN0ZW5lcignZmV0Y2gnLCBlID0+IHsNCiAgY29uc3QgcmVxID0gZS5yZXF1ZXN0Ow0KICBpZiAocmVxLm1ldGhvZCAhPT0gJ0dFVCcpIHJldHVybjsNCg0KICBjb25zdCB1cmwgPSBuZXcgVVJMKHJlcS51cmwpOw0KICBpZiAodXJsLm9yaWdpbiAhPT0gbG9jYXRpb24ub3JpZ2luKSByZXR1cm47DQoNCiAgLy8g5pWw5o2u5o6l5Y+j5LiA5b6L55u06L+e5pyN5Yqh5Zmo77yM57ud5LiN6LWw57yT5a2YDQogIGlmICh1cmwucGF0aG5hbWUuc3RhcnRzV2l0aCgnL2FwaS8nKSkgcmV0dXJuOw0KDQogIC8vIOmdmeaAgei1hOa6kO+8mue9kee7nOS8mOWFiO+8jOaWree9keaXtuWbnuiQvee8k+WtmA0KICBlLnJlc3BvbmRXaXRoKA0KICAgIGZldGNoKHJlcSkNCiAgICAgIC50aGVuKHJlcyA9PiB7DQogICAgICAgIGlmIChyZXMgJiYgcmVzLm9rKSB7DQogICAgICAgICAgY29uc3QgY29weSA9IHJlcy5jbG9uZSgpOw0KICAgICAgICAgIGNhY2hlcy5vcGVuKENBQ0hFKS50aGVuKGMgPT4gYy5wdXQocmVxLCBjb3B5KSk7DQogICAgICAgIH0NCiAgICAgICAgcmV0dXJuIHJlczsNCiAgICAgIH0pDQogICAgICAuY2F0Y2goKCkgPT4gY2FjaGVzLm1hdGNoKHJlcSkudGhlbihoaXQgPT4gaGl0IHx8IGNhY2hlcy5tYXRjaCgnLi9pbmRleC5odG1sJykpKQ0KICApOw0KfSk7
+/* 墨语 · Service Worker
+   ---------------------------------------------------------------------------
+   依赖库已本地化到 lib/，因此离线完全可用，无需缓存任何 CDN 资源。
+
+   注意：这里只缓存「应用壳层」这类静态文件，绝不碰 /api/ 数据接口——
+   一旦把书籍数据缓进 Cache Storage，用户会读到过期内容，且难以排查。
+*/
+
+const CACHE = 'moyu-v2';
+const SHELL = [
+  './',
+  './index.html',
+  './css/app.css',
+  './js/app.js',
+  './js/db.js',
+  './js/engine.js',
+  './js/parsers.js',
+  './js/ai.js',
+  './lib/jszip.min.js',
+  './lib/marked.min.js',
+  './lib/pdf.min.js',
+  './lib/pdf.worker.min.js',
+  './manifest.webmanifest'
+];
+
+self.addEventListener('install', e => {
+  e.waitUntil(
+    caches.open(CACHE)
+      .then(c => Promise.allSettled(SHELL.map(u => c.add(u))))
+      .then(() => self.skipWaiting())
+  );
+});
+
+self.addEventListener('activate', e => {
+  e.waitUntil(
+    caches.keys()
+      .then(keys => Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k))))
+      .then(() => self.clients.claim())
+  );
+});
+
+self.addEventListener('fetch', e => {
+  const req = e.request;
+  if (req.method !== 'GET') return;
+
+  const url = new URL(req.url);
+  if (url.origin !== location.origin) return;
+
+  // 数据接口一律直连服务器，绝不走缓存
+  if (url.pathname.startsWith('/api/')) return;
+
+  // 静态资源：网络优先，断网时回落缓存
+  e.respondWith(
+    fetch(req)
+      .then(res => {
+        if (res && res.ok) {
+          const copy = res.clone();
+          caches.open(CACHE).then(c => c.put(req, copy));
+        }
+        return res;
+      })
+      .catch(() => caches.match(req).then(hit => hit || caches.match('./index.html')))
+  );
+});

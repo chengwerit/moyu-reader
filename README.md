@@ -1,1 +1,257 @@
-PGRpdiBhbGlnbj0iY2VudGVyIj4NCg0KIyDloqjor60gwrcgTW95dSBSZWFkZXINCg0KKirlj4zlh7vljbPnlKjnmoTmnKzlnLDnlLXlrZDkuabpmIXor7vlmajjgILmlbDmja7lrZjlnKjkvaDoh6rlt7HnmoTmlofku7blpLnph4zjgIIqKg0KDQrpm7bms6jlhowgwrcg6Zu25a6J6KOFIMK3IOmbtuS4iuS8oCDCtyDmlq3nvZHlj6/nlKgNCg0KW+W/q+mAn+W8gOWni10oI+W/q+mAn+W8gOWniykgwrcgW+aUr+aMgeagvOW8j10oI+aUr+aMgeagvOW8jykgwrcgW+WKn+iDvV0oI+WKn+iDvSkgwrcgW+aetuaehF0oI+aetuaehCkgwrcgW+W4uOingemXrumimF0oI+W4uOingemXrumimCkgwrcgW+WPjemmiOS4juaPkOmXrl0oI+WPjemmiOS4juaPkOmXrikNCg0KPC9kaXY+DQoNCi0tLQ0KDQojIyDov5nmmK/ku4DkuYgNCg0K5LiA5Liq5oqK5Lmm5ouW6L+b56qX5Y+j5bCx6IO96K+755qE55S15a2Q5Lmm6ZiF6K+75Zmo44CCDQoNCi0gKirlj4zlh7sgYOWQr+WKqOWiqOivrS5iYXRgIOWwseiDveeUqCoqIOKAlOKAlCDkuI3pnIDopoHoo4UgTm9kZeOAgVB5dGhvbiDmiJbku7vkvZXova/ku7bvvIznlKjnmoTmmK8gV2luZG93cyDoh6rluKbnmoQgUG93ZXJTaGVsbA0KLSAqKuaVsOaNruWtmOWcqCBgZGF0YS9gIOebruW9lSoqIOKAlOKAlCDlpI3liLbmlbTkuKrmlofku7blpLnliLDlj6bkuIDlj7DnlLXohJHnu6fnu63nlKjvvIzmuIXmtY/op4jlmajnvJPlrZjkuI3lvbHlk40NCi0gKirlrozlhajnprvnur8qKiDigJTigJQg56ys5LiJ5pa55bqT5bey5omT5YyF6L+bIGBsaWIvYO+8jOaWree9keS5n+iDveino+aekCBFUFVC44CBUERG44CBRE9DWOOAgU1hcmtkb3duIOetieagvOW8jw0KLSAqKuS4jeS4iuS8oOS7u+S9leaVsOaNrioqIOKAlOKAlCDmsqHmnInotKbmiLfjgIHmsqHmnInmnI3liqHlmajjgIFBSSDlip/og73mmK/kvaDoh6rluKYgS2V5IOebtOi/ng0KDQrmlK/mjIEgRVBVQuOAgVBERuOAgURPQ1jjgIFUWFTjgIFNYXJrZG93buOAgUhUTUzjgIFGQjLjgIFSVEbjgIFNT0JJIC8gQVpXIC8gQVpXMyAvIFBSQyDlhbEgMTEg57G75qC85byP44CCDQoNCi0tLQ0KDQojIyDlv6vpgJ/lvIDlp4sNCg0KIyMjIOS9v+eUqOiAhQ0KDQoxLiDkuIvovb3miJblhYvpmobmlbTkuKrmlofku7blpLkNCjIuIOWPjOWHuyAqKmDlkK/liqjloqjor60uYmF0YCoqDQozLiDmtY/op4jlmajoh6rliqjmiZPlvIDvvIzmiorkuabmi5bov5vljrsNCg0K6buR56qX5Y+j5piv5pys5Zyw5pyN5Yqh5Zmo77yM55So55qE5pe25YCZ5Yir5YWz77yM6K+75a6M55u05o6l5YWz5o6J5Y2z5Y+v44CCDQrnq6/lj6Pku44gODg5OSDlvIDlp4voh6rliqjmjJHpgInvvIzooqvljaDnlKjkvJroh6rliqjmjaLvvIzkuI3nlKjmiYvliqjphY3nva7jgIINCg0KPiDmjaLnlLXohJHvvJrmiormlbTkuKrmlofku7blpLnlpI3liLbov4fljrvvvIzlj4zlh7vlkK/liqjlmajnu6fnu63nlKjjgILkuabjgIHnrJTorrDjgIHliJLnur/jgIHkuabnrb7jgIHkuLvpopjorr7nva7lhajpg73lnKjjgIINCg0KIyMjIOW8gOWPkeiAhQ0KDQo8ZGV0YWlscz4NCjxzdW1tYXJ5PueCueWHu+WxleW8gDwvc3VtbWFyeT4NCg0KKirmioDmnK/moIgqKu+8muWOn+eUnyBKYXZhU2NyaXB077yIRVMgTW9kdWxl77yJKyBQb3dlclNoZWxsICsgSHR0cExpc3RlbmVy44CC5peg5p6E5bu65q2l6aqk77yM5peg5omT5YyF5Zmo44CCDQoNCmBgYA0KbW95dS1yZWFkZXIvDQrilJzilIDilIAg5ZCv5Yqo5aKo6K+tLmJhdCAgICAgICAgICDlj4zlh7vlkK/liqgNCuKUnOKUgOKUgCBzZXJ2ZXIucHMxICAgICAgICAgICAg5pys5Zyw5pyN5Yqh5Zmo77yI6Z2Z5oCB5pyN5YqhICsg5pWw5o2uIEFQSe+8iQ0K4pSc4pSA4pSAIGluZGV4Lmh0bWwgICAgICAgICAgICDlupTnlKjpqqjmnrYNCuKUnOKUgOKUgCBjc3MvYXBwLmNzcyAgICAgICAgICAg5YWo6YOo5qC35byP5LiO5Li76aKY5Y+Y6YePDQrilJzilIDilIAganMvDQrilIIgICDilJzilIDilIAgZGIuanMgICAgICAgICAgICAg5pWw5o2u5bGC77yI5paH5Lu25a2Y5YKoIC8gSW5kZXhlZERCIOWPjOWQjuerr++8iQ0K4pSCICAg4pSc4pSA4pSAIHBhcnNlcnMuanMgICAgICAgIOagvOW8j+ino+aekCDihpIg57uf5LiA5Lmm56i/5qih5Z6LDQrilIIgICDilJzilIDilIAgZW5naW5lLmpzICAgICAgICAg6ZiF6K+75byV5pOO77yI5YiG6aG144CB6L+b5bqm44CB5YiS57q/44CB5pyX6K+777yJDQrilIIgICDilJzilIDilIAgYWkuanMgICAgICAgICAgICAgQUkg5Ly06K+75a6i5oi356uvDQrilIIgICDilJTilIDilIAgYXBwLmpzICAgICAgICAgICAg55WM6Z2i6YC76L6RDQrilJzilIDilIAgbGliLyAgICAgICAgICAgICAgICAgIOesrOS4ieaWueW6k++8iOW3suacrOWcsOWMlu+8jOaWree9keWPr+eUqO+8iQ0K4pSc4pSA4pSAIHN3LmpzICAgICAgICAgICAgICAgICBTZXJ2aWNlIFdvcmtlcg0K4pSU4pSA4pSAIGRhdGEvICAgICAgICAgICAgICAgICDkvaDnmoTmlbDmja7vvIhnaXQg5LuT5bqT5Lit5bey5o6S6Zmk77yJDQpgYGANCg0KKirmnrbmnoQqKu+8muaJgOacieagvOW8j+ino+aekOWQjue7n+S4gOaIkCBgeyB0aXRsZSwgYXV0aG9yLCBjb3ZlciwgY2hhcHRlcnM6IFt7IHRpdGxlLCBodG1sLCB0ZXh0IH1dLCB0b2MgfWDvvIwNCumYheivu+W8leaTjuWPquiupOi/meS4gOenjee7k+aehO+8jOaWsOWinuagvOW8j+S4jeeUqOaUueW8leaTjuOAgg0KDQoqKui3kemqjOivgSoq77yaDQoNCmBgYGJhc2gNCiMg5ZCv5Yqo5pyN5Yqh5ZmoDQpwb3dlcnNoZWxsIC1Ob1Byb2ZpbGUgLUV4ZWN1dGlvblBvbGljeSBCeXBhc3MgLUZpbGUgc2VydmVyLnBzMQ0KDQojIOiwg+ivleerr+WPo+WQr+WKqCBFZGdlDQptc2VkZ2UuZXhlIC0tcmVtb3RlLWRlYnVnZ2luZy1wb3J0PTkyMjIgLS11c2VyLWRhdGEtZGlyPSVURU1QJVxtb3l1LWVkZ2UgaHR0cDovLzEyNy4wLjAuMTo4ODk5Lw0KDQojIOi3kea1i+ivlQ0Kbm9kZSB2ZXJpZnkuY2pzICAgICAgICAgICAjIDEyIOmhueWKn+iDveajgOafpQ0Kbm9kZSB2ZXJpZnktcG9ydGFibGUuY2pzICAjIDE4IOmhueS+v+aQuuaAp+S4juiQveebmOajgOafpQ0KYGBgDQoNCj4g6K6+5LqGIGBodHRwX3Byb3h5YCDnmoTnjq/looPpnIDlhYjmuIXmjonvvIzlkKbliJkgTm9kZSDov57kuI3kuIogYDEyNy4wLjAuMWDvvJoNCj4gYGVudiAtdSBodHRwX3Byb3h5IC11IGh0dHBzX3Byb3h5IC11IEhUVFBfUFJPWFkgLXUgSFRUUFNfUFJPWFkgbm9kZSB2ZXJpZnkuY2pzYA0KDQoqKuW8gOWPkei4qeWdkeiusOW9lSoq6KeBIFvlvIDlj5HnrJTorrAubWRdKOW8gOWPkeeslOiusC5tZCkg4oCU4oCUIOWMheWQq+iuvuiuoeWPluiIjeOAgeW3suS/ruWkjeeahCBidWcNCuS7peWPiiBXaW5kb3dzIOe8lueggeebuOWFs+eahOWdke+8iOWvueWBmuWQjOexu+mhueebrueahOW8gOWPkeiAheWPr+iDveacieeUqO+8ieOAgg0KDQrmm7TlrozmlbTnmoTpobnnm67lr7zop4jop4EgW+mhueebruivtOaYji5tZF0o6aG555uu6K+05piOLm1kKe+8jOWMheWQq+ebruW9lee7k+aehOivtOaYjuOAgQ0K56Gs5oCn57qm5p2f5LiO5o6S5p+l6aG65bqP44CCDQoNCioq6aG555uu5LiK5LiL5paHKirvvJpgLndvcmtidWRkeS9gIOS4i+aYr+e7mSBBSSDliqnmiYvnmoTpobnnm67orrDlv4bkuI7pqozor4HmioDog73vvIwNCueUqCBXb3JrQnVkZHkg5omT5byA5pys6aG555uu5pe25Lya6Ieq5Yqo6K+75Y+W77yM6IO96K6pIEFJIOabtOW/q+W7uueri+ato+ehruiupOefpeOAgg0KDQoqKuaUuemAoOi3r+W+hCoq77ya5pys6aG555uu5Yid54mI5piv57qv572R6aG15bqU55So77yI5pWw5o2u5ZyoIEluZGV4ZWREQu+8ieOAgg0K5ZCO5pS56YCg5oiQ5Y+M5Ye75Y2z55So44CB5pWw5o2u5a2Y5paH5Lu25aS555qE5L6/5pC654mI77yM6KeB5byA5Y+R56yU6K6w5Lit55qE44CM5L6/5pC65YyW5pS56YCg44CN56ug6IqC44CCDQoNCjwvZGV0YWlscz4NCg0KLS0tDQoNCiMjIOaVsOaNruWtmOWcqOWTqg0KDQrlsLHlnKgqKui/meS4quaWh+S7tuWkueeahCBgZGF0YS9gIOebruW9lSoq77yM55So6K6w5LqL5pys5bCx6IO95omT5byA77yaDQoNCmBgYA0KZGF0YS8NCuKUnOKUgOKUgCBsaWJyYXJ5Lmpzb24gICAgICDkuabmnrbjgIHnrJTorrDjgIHkuabnrb7jgIHpmIXor7vorr7nva4NCuKUlOKUgOKUgCBib29rcy8NCiAgICDilJTilIDilIAgPGlkPi5qc29uICAgICDmr4/mnKzkuabnmoTnq6DoioLmraPmlocNCmBgYA0KDQrmjaLnlLXohJHlpI3liLbmlbTkuKrmlofku7blpLnljbPlj6/jgILmuIXnkIbmtY/op4jlmajmlbDmja7jgIHph43oo4Xns7vnu5/jgIHph43oo4XmtY/op4jlmajpg73kuI3lvbHlk43jgIINCg0KPiDov5nmmK/mnInmhI/nmoTorr7orqHlj5boiI3vvJoqKuS9oOeahOmYheivu+iusOW9leWxnuS6juS9oO+8jOS4jeWxnuS6juS7u+S9lei0puaIt+OAgioqDQo+IOS7o+S7t+aYr+S4jei3qOiuvuWkh+iHquWKqOWQjOatpSDigJTigJQg5L2G5ZCM5q2l5pys5p2l5bCx6ZyA6KaB5L2g5L+h5Lu75LiA5Liq5Lit5b+D5YyW5pyN5Yqh5Zmo44CCDQoNCi0tLQ0KDQojIyDmlK/mjIHmoLzlvI8NCg0KfCDmoLzlvI8gfCDlrp7njrDmlrnlvI8gfCDor7TmmI4gfA0KfC0tLXwtLS18LS0tfA0KfCBFUFVCIHwgSlNaaXAgKyBPUEYvc3BpbmUgfCDop6PmnpDlhYPmlbDmja7jgIHlsIHpnaLjgIHnm67lvZXvvIzlm77niYflhoXogZQgfA0KfCBQREYgfCBQREYuanMgfCDmjInlnZDmoIfph43lu7rmrrXokL3vvJvml6DmlofmnKzlsYLml7bmuLLmn5PkuLrlm77niYcgfA0KfCBET0NYIHwgSlNaaXAgKyBPT1hNTCB8IOauteiQveOAgeagh+mimOWxgue6p+OAgeihqOagvOOAgeWGheW1jOWbvueJhyB8DQp8IFRYVCB8IOWOn+eUnyBUZXh0RGVjb2RlciB8IFVURi04IC8gR0IxODAzMCAvIEJpZzUgLyBVVEYtMTYg6Ieq5Yqo5o6i5rWLICsg5Lit5paH56ug6IqC5YiH5YiGIHwNCnwgTWFya2Rvd24gfCBtYXJrZWQgfCDmjIkgaDEvaDIg5YiH5YiG56ug6IqCIHwNCnwgSFRNTCAvIFhIVE1MIHwgRE9NUGFyc2VyIHwg5riF6Zmk6ISa5pys5LiO5LqL5Lu25bGe5oCn5ZCO5oyJIGgxL2gyIOWIh+WIhiB8DQp8IEZCMiB8IFhNTCDop6PmnpAgfCDnq6DoioLjgIHlvLrosIPjgIHmj5Llm77ljaDkvY0gfA0KfCBSVEYgfCDmjqfliLblrZfliaXnprsgfCDmj5Dlj5bnuq/mlofmnKzlkI7mjInnq6DoioLliIfliIYgfA0KfCBNT0JJIC8gQVpXIC8gQVpXMyAvIFBSQyB8IFBhbG1ET0Mg6Kej5Y6LIHwg5pegIERSTSDniYjmnKzlj6/nlKggfA0KDQrluKYgRFJNIOeahOaWh+S7tuaXoOazleino+aekO+8jOivt+S9v+eUqOaXoOS/neaKpOeJiOacrOOAgg0KDQotLS0NCg0KIyMg5Yqf6IO9DQoNCioq5Lmm5p62Kiog4oCUIOaQnOe0ouOAgee9rumhtuOAgeW3suivuy/mnKror7vnrZvpgInjgIHliJfooajop4blm77jgIHliKDpmaTjgIHmr4/ml6XkuIDlj6UNCg0KKirpmIXor7sqKiDigJQg55uu5b2V6Lez6L2s44CB5YWo5paH5pCc57Si44CB5Lmm562+44CB5YiS57q/56yU6K6w44CBNSDlpZfkuLvpopjjgIHlrosv6buRL+alt+S4ieenjeWtl+S9k+OAgQ0K5a2X5Y+35LiO6KGM6Led6LCD6IqC44CB5Y2V6aG1L+WPjOmhteOAgVplbiDmsonmtbjmqKHlvI/jgIHplK7nm5jkuI7mu5rova7kuI7op6blsY/pgILphY0NCg0KKirmnJfor7sqKiDigJQg5Z+65LqO5rWP6KeI5Zmo5Y6f55SfIGBzcGVlY2hTeW50aGVzaXNg77yM6YCQ5Y+l6auY5Lqu5bm26Ieq5Yqo6Lef6ZqP5rua5YqoDQoNCioqQUkg5Ly06K+7Kiog4oCUIOiHquW4piBLZXkg5qih5byP77yM5pSv5oyB6Kej6YeK44CB5oC757uT44CB5YWz6ZSu6K+N44CB57+76K+R44CB57ut5YaZ44CB56ug6IqC57qg6ZSZ44CCDQrlhbzlrrnku7vkvZUgT3BlbkFJIOagvOW8j+aOpeWPo++8iOWGhee9riBEZWVwU2VlayAvIE9wZW5BSSAvIOmAmuS5ieWNg+mXriAvIEtpbWkgLyDmmbrosLEg6aKE6K6+77yJ44CCDQror7fmsYLku47mtY/op4jlmajnm7Tov57miYDloavmnI3liqHvvIzkuI3nu4/kuK3ovazvvIxLZXkg5Y+q5a2Y5pys5Zyw44CCDQoNCioq5aSH5Lu9Kiog4oCUIOWujOaVtCBKU09OIOWvvOWHuuS4juaBouWkje+8iOWQq+WFqOmDqOato+aWh+OAgeeslOiusOOAgeS5puetvuOAgeiuvue9ru+8iQ0KDQojIyMg5b+r5o236ZSuDQoNCnwg5oyJ6ZSuIHwg5Yqf6IO9IHwNCnwtLS18LS0tfA0KfCBg4oaQYCBg4oaSYCBg56m65qC8YCBgUGFnZVVwL0Rvd25gIHwg57+76aG1IHwNCnwgYFRgIC8gYEZgIC8gYE5gIC8gYEFgIHwg55uu5b2VIC8g5pCc57SiIC8g56yU6K6wIC8gQUkg6Z2i5p2/IHwNCnwgYFpgIHwg5rKJ5rW45qih5byPIHwNCnwgYEVzY2AgfCDlhbPpl63pnaLmnb8gfA0KDQotLS0NCg0KIyMg5p625p6EDQoNCioq57uf5LiA5Lmm56i/5qih5Z6LKiog4oCU4oCUIOaJgOacieagvOW8j+acgOe7iOmDvei9rOaIkA0KYHsgdGl0bGUsIGF1dGhvciwgY292ZXIsIGNoYXB0ZXJzOiBbeyB0aXRsZSwgaHRtbCwgdGV4dCB9XSwgdG9jIH1g77yMDQrpmIXor7vlvJXmk47lj6rorqTov5nkuIDnp43nu5PmnoTvvIzmlrDlop7moLzlvI/kuI3nlKjmlLnlvJXmk47jgIINCg0KKirlj4zlrZjlgqjlkI7nq68qKiDigJTigJQgYGpzL2RiLmpzYCDlr7nlpJbmjqXlj6PlrozlhajkuIDoh7TvvIzlhoXpg6joh6rliqjpgInmi6nvvJoNCg0KfCDmiZPlvIDmlrnlvI8gfCDlrZjlgqjkvY3nva4gfA0KfC0tLXwtLS18DQp8IOWPjOWHuyBg5ZCv5Yqo5aKo6K+tLmJhdGAgfCBgZGF0YS9gIOebruW9le+8iOaWh+S7tuWtmOWCqO+8iSB8DQp8IOebtOaOpeWPjOWHuyBgaW5kZXguaHRtbGDvvIhgZmlsZTovL2DvvIkgfCDmtY/op4jlmaggSW5kZXhlZERC77yI5YWc5bqV77yJIHwNCg0K5ZCv5Yqo5pe25o6i5rWLIGAuL2FwaS9waW5nYO+8jOaOouS4jeWIsOWwsemAgOWbniBJbmRleGVkRELjgILkuIrlsYLku6PnoIHml6DpnIDljLrliIbjgIINCg0KKirliIbpobXnlKggQ1NTIOWkmuagjyoqIOKAlOKAlCBgLnBhZ2UtaW5uZXJgIOWQjOaXtuaYr+aOkueJiOWuueWZqOWSjOaoquWQkea7muWKqOWuueWZqO+8jA0K5rua5Yqo5q2l6ZW/5Lil5qC8562J5LqO44CM5qCP5a69ICsg5qCP6Ze06Led44CN44CCDQoNCioq5L6d6LWW5pys5Zyw5YyWKiog4oCU4oCUIOesrOS4ieaWueW6k+aJk+WMhei/myBgbGliL2DvvIzpobXpnaLpm7blpJbpg6jlvJXnlKjvvIzmlq3nvZHlj6/nlKjjgIINCg0KLS0tDQoNCiMjIOW4uOingemXrumimA0KDQoqKlHvvJrlj4zlh7sgYGluZGV4Lmh0bWxgIOWPr+S7peWQl++8nyoqDQrlj6/ku6XvvIzkvYbmlbDmja7kvJrlrZjov5vmtY/op4jlmajogIzkuI3mmK/mlofku7blpLnjgILljp/lm6DvvJpFUyDmqKHlnZfnmoTlkIzmupDnrZbnlaXlhrPlrprkuoYNCue6ryBgZmlsZTovL2Ag5peg5rOV5Yqg6L295qih5Z2X6ISa5pys44CC6K+355SoIGDlkK/liqjloqjor60uYmF0YOOAgg0KDQoqKlHvvJrkvJrms4TpnLLmiJHnmoTpmIXor7vorrDlvZXlkJfvvJ8qKg0K5LiN5Lya44CC5pWw5o2u5Y+q5Zyo5L2g6Ieq5bex55qE5py65Zmo5LiK77yM5LiN5LiK5Lyg5Lu75L2V5pyN5Yqh5Zmo77yM5Lmf5rKh5pyJ6LSm5oi35L2T57O744CCDQrllK/kuIDnmoTlr7nlpJbor7fmsYLmmK/kvaDoh6rlt7HphY3nva7nmoQgQUkg5o6l5Y+j44CCDQoNCioqUe+8muaUr+aMgSBNYWMgLyBMaW51eCDlkJfvvJ8qKg0K55uu5YmN5ZCv5Yqo5Zmo5pivIFdpbmRvd3Mg55qEIGAuYmF0YO+8jOacjeWKoeerr+iEmuacrOaYryBQb3dlclNoZWxs44CCDQrmoLjlv4PlupTnlKjmmK/nuq/liY3nq6/vvIzpnIDopoEgTm9kZSDmiJYgUHl0aG9uIOi1t+S4qumdmeaAgeacjeWKoeS5n+iDveeUqO+8jA0K5L2G5pWw5o2u5Lya6JC95Yiw5rWP6KeI5ZmoIEluZGV4ZWREQiDogIzpnZ7mlofku7blpLnjgIINCg0KKipR77ya5omr5o+P54mIIFBERiDog73mkJzntKLlkJfvvJ8qKg0K5LiN6IO944CC5rKh5pyJ5paH5pys5bGC5pe25Y+q6IO95L2c5Li65Zu+54mH5pi+56S677yM5peg5rOV5pCc57Si5oiW5YiS57q/44CCDQoNCioqUe+8muS5pueJueWIq+WkmuS8muaAjuagt++8nyoqDQpgZGF0YS9ib29rcy9gIOmHjOavj+acrOS5puS4gOS4queLrOeri+aWh+S7tu+8jOS4iuWNg+acrOS5n+iDveato+W4uOW3peS9nOOAgg0KYGxpYnJhcnkuanNvbmAg5Y+q5a2Y5YWD5pWw5o2u77yM6ZqP5Lmm6YeP5aKe6ZW/5Lya5Y+Y5aSn77yM5LiK5LiH5pys5pe25bu66K6u5pS555So5pWw5o2u5bqT44CCDQoNCioqUe+8mkFJIOWKn+iDveimgemSseWQl++8nyoqDQropoHvvIzkvYbotLnnlKjnlLHkvaDnlKjnmoTmnI3liqHmlrnmlLbjgILmnKzpobnnm67pm7bkuK3ovazjgIHkuI3liqDku7fjgIHkuI3nu4/miYvkvaDnmoQgS2V5IOWSjOivt+axguOAgg0KDQotLS0NCg0KIyMg5bey55+l6ZmQ5Yi2DQoNCi0g5LiN5o+Q5L6b6Ieq5Yqo5LqR5ZCM5q2lIOKAlOKAlCDmjaLnlLXohJHpnaDlpI3liLbmlofku7blpLkNCi0g5pyX6K+76Z+z6LSo5Y+W5Yaz5LqO5rWP6KeI5Zmo5LiO57O757uf6K+t6Z+z5byV5pOODQotIOaegeiAgeeahCBgLmRvY2Ag5LqM6L+b5Yi25qC85byP5Y+v6IO95peg5rOV6Kej5p6Q77yM5bu66K6u5Y+m5a2Y5Li6IGAuZG9jeGANCi0g5omr5o+P54mIIFBERiDml6DmlofmnKzlsYLvvIzlj6rog73nnIvlm74NCi0gTU9CSSAvIEFaVzMg55qEIEtGOCDljovnvKnmtYHlj6rlgZrkuoblsL3lipvop6PmnpDvvIzlpI3mnYLmlofku7blj6/og73lpLHotKUNCg0KLS0tDQoNCiMjIOWPjemmiOS4juaPkOmXrg0KDQrpgYfliLDpl67popjjgIHmg7PopoHmn5DkuKrlip/og73vvIzmiJbogIXljZXnuq/op4nlvpflk6rph4zliKvmia3vvIzpg73mrKLov47lvIANCltpc3N1ZV0oaHR0cHM6Ly9naXRodWIuY29tL2NoZW5nd2VyaXQvbW95dS1yZWFkZXIvaXNzdWVzL25ldykg5ZGK6K+J5oiR44CCDQoNCioq5o+Q6Zeu5YmN5YWI55yL5LiA55y8IFvluLjop4Hpl67pophdKCPluLjop4Hpl67popgpKirvvIzmiavmj4/niYggUERGIOaQnOS4jeS6huOAgU1hYyAvIExpbnV4IOaaguS4jeaUr+aMgei/meexu+aDheWGtQ0K6YO95bey57uP5YaZ5Zyo5LiK6Z2i5LqG77yM6IO955yB5L2g5ZKM5oiR5ZCE5LiA5qyh5b6A6L+U44CCDQoNCuW8gCBpc3N1ZSDml7bluKbkuIrov5nkuInmoLfvvIzog73lv6vlvojlpJrvvJoNCg0KfCDkv6Hmga8gfCDmgI7kuYjmi7/liLAgfA0KfC0tLXwtLS18DQp8IOezu+e7n+eJiOacrCB8IOiuvue9riDihpIg57O757ufIOKGkiDlhbPkuo4gfA0KfCDmtY/op4jlmajlj4rniYjmnKwgfCDmtY/op4jlmajlnLDlnYDmoI/lj7PkvqfnmoTjgIzii6/jgI3ihpIg5YWz5LqOIHwNCnwg6Zeu6aKY546w6LGhIHwg5oiq5Zu+5pyA5aW977yM5oiW6ICF5oqK6buR56qX5Y+j6YeM55qE5oql6ZSZ5Y6f5paH6LS05LiK5p2lIHwNCg0KKirlhbbku5bmlrnlvI8qKg0KDQotIOaPkOWKn+iDveaDs+azle+8muW8gCBpc3N1ZSDml7blnKjjgIznsbvlnovjgI3ph4zpgInjgIzlip/og73mg7Pms5XjgI3ljbPlj6/vvIzkuI3nlKjlnKjmoIfpopjph4zlhpnku4DkuYgNCi0g5qyi6L+OIFN0YXLjgILku6PnoIHlsYLpnaLnmoTotKHnjK7vvIjmj5AgUFLvvInor7flhYjlvIAgaXNzdWUg6K6o6K665pa55ZCR77yM6YG/5YWN55m95YGaDQoNCuWTjeW6lOaXtumXtO+8muW3peS9nOaXpemAmuW4uCAx772eMyDlpKnjgILmsqHkurrlm57kuI3ku6PooajmsqHkurrnnIvvvIzlj6/og73lj6rmmK/msqHnnIvliLDjgIINCg0KLS0tDQoNCiMjIOiuuOWPrw0KDQrmnKzpobnnm67ph4fnlKggW01JVCDorrjlj69dKExJQ0VOU0Up44CCDQoNCmBsaWIvYCDnm67lvZXlhoXnmoTnrKzkuInmlrnlupPniYjmnYPlvZLlkIToh6rkvZzogIXmiYDmnInvvIzor6bop4EgW2xpYi9MSUNFTlNFLm1kXShsaWIvTElDRU5TRS5tZCnvvJoNCg0KLSBKU1ppcCDigJQgTUlUDQotIG1hcmtlZCDigJQgTUlUDQotIFBERi5qcyDigJQgQXBhY2hlIExpY2Vuc2UgMi4wDQoNCuOAjOWiqOivreOAjeS4uuacrOmhueebruWQjeensO+8jOS4juS4iui/sOesrOS4ieaWuemhueebruaXoOWFs+iBlOOAgg==
+<div align="center">
+
+# 墨语 · Moyu Reader
+
+**双击即用的本地电子书阅读器。数据存在你自己的文件夹里。**
+
+零注册 · 零安装 · 零上传 · 断网可用
+
+[快速开始](#快速开始) · [支持格式](#支持格式) · [功能](#功能) · [架构](#架构) · [常见问题](#常见问题) · [反馈与提问](#反馈与提问)
+
+</div>
+
+---
+
+## 这是什么
+
+一个把书拖进窗口就能读的电子书阅读器。
+
+- **双击 `启动墨语.bat` 就能用** —— 不需要装 Node、Python 或任何软件，用的是 Windows 自带的 PowerShell
+- **数据存在 `data/` 目录** —— 复制整个文件夹到另一台电脑继续用，清浏览器缓存不影响
+- **完全离线** —— 第三方库已打包进 `lib/`，断网也能解析 EPUB、PDF、DOCX、Markdown 等格式
+- **不上传任何数据** —— 没有账户、没有服务器、AI 功能是你自带 Key 直连
+
+支持 EPUB、PDF、DOCX、TXT、Markdown、HTML、FB2、RTF、MOBI / AZW / AZW3 / PRC 共 11 类格式。
+
+---
+
+## 快速开始
+
+### 使用者
+
+1. 下载或克隆整个文件夹
+2. 双击 **`启动墨语.bat`**
+3. 浏览器自动打开，把书拖进去
+
+黑窗口是本地服务器，用的时候别关，读完直接关掉即可。
+端口从 8899 开始自动挑选，被占用会自动换，不用手动配置。
+
+> 换电脑：把整个文件夹复制过去，双击启动器继续用。书、笔记、划线、书签、主题设置全都在。
+
+### 开发者
+
+<details>
+<summary>点击展开</summary>
+
+**技术栈**：原生 JavaScript（ES Module）+ PowerShell + HttpListener。无构建步骤，无打包器。
+
+```
+moyu-reader/
+├── 启动墨语.bat          双击启动
+├── server.ps1            本地服务器（静态服务 + 数据 API）
+├── index.html            应用骨架
+├── css/app.css           全部样式与主题变量
+├── js/
+│   ├── db.js             数据层（文件存储 / IndexedDB 双后端）
+│   ├── parsers.js        格式解析 → 统一书稿模型
+│   ├── engine.js         阅读引擎（分页、进度、划线、朗读）
+│   ├── ai.js             AI 伴读客户端
+│   └── app.js            界面逻辑
+├── lib/                  第三方库（已本地化，断网可用）
+├── sw.js                 Service Worker
+└── data/                 你的数据（git 仓库中已排除）
+```
+
+**架构**：所有格式解析后统一成 `{ title, author, cover, chapters: [{ title, html, text }], toc }`，
+阅读引擎只认这一种结构，新增格式不用改引擎。
+
+**跑验证**：
+
+```bash
+# 启动服务器
+powershell -NoProfile -ExecutionPolicy Bypass -File server.ps1
+
+# 调试端口启动 Edge
+msedge.exe --remote-debugging-port=9222 --user-data-dir=%TEMP%\moyu-edge http://127.0.0.1:8899/
+
+# 跑测试
+node verify.cjs           # 12 项功能检查
+node verify-portable.cjs  # 18 项便携性与落盘检查
+```
+
+> 设了 `http_proxy` 的环境需先清掉，否则 Node 连不上 `127.0.0.1`：
+> `env -u http_proxy -u https_proxy -u HTTP_PROXY -u HTTPS_PROXY node verify.cjs`
+
+**开发踩坑记录**见 [开发笔记.md](开发笔记.md) —— 包含设计取舍、已修复的 bug
+以及 Windows 编码相关的坑（对做同类项目的开发者可能有用）。
+
+更完整的项目导览见 [项目说明.md](项目说明.md)，包含目录结构说明、
+硬性约束与排查顺序。
+
+**项目上下文**：`.workbuddy/` 下是给 AI 助手的项目记忆与验证技能，
+用 WorkBuddy 打开本项目时会自动读取，能让 AI 更快建立正确认知。
+
+**改造路径**：本项目初版是纯网页应用（数据在 IndexedDB）。
+后改造成双击即用、数据存文件夹的便携版，见开发笔记中的「便携化改造」章节。
+
+</details>
+
+---
+
+## 数据存在哪
+
+就在**这个文件夹的 `data/` 目录**，用记事本就能打开：
+
+```
+data/
+├── library.json      书架、笔记、书签、阅读设置
+└── books/
+    └── <id>.json     每本书的章节正文
+```
+
+换电脑复制整个文件夹即可。清理浏览器数据、重装系统、重装浏览器都不影响。
+
+> 这是有意的设计取舍：**你的阅读记录属于你，不属于任何账户。**
+> 代价是不跨设备自动同步 —— 但同步本来就需要你信任一个中心化服务器。
+
+---
+
+## 支持格式
+
+| 格式 | 实现方式 | 说明 |
+|---|---|---|
+| EPUB | JSZip + OPF/spine | 解析元数据、封面、目录，图片内联 |
+| PDF | PDF.js | 按坐标重建段落；无文本层时渲染为图片 |
+| DOCX | JSZip + OOXML | 段落、标题层级、表格、内嵌图片 |
+| TXT | 原生 TextDecoder | UTF-8 / GB18030 / Big5 / UTF-16 自动探测 + 中文章节切分 |
+| Markdown | marked | 按 h1/h2 切分章节 |
+| HTML / XHTML | DOMParser | 清除脚本与事件属性后按 h1/h2 切分 |
+| FB2 | XML 解析 | 章节、强调、插图占位 |
+| RTF | 控制字剥离 | 提取纯文本后按章节切分 |
+| MOBI / AZW / AZW3 / PRC | PalmDOC 解压 | 无 DRM 版本可用 |
+
+带 DRM 的文件无法解析，请使用无保护版本。
+
+---
+
+## 功能
+
+**书架** — 搜索、置顶、已读/未读筛选、列表视图、删除、每日一句
+
+**阅读** — 目录跳转、全文搜索、书签、划线笔记、5 套主题、宋/黑/楷三种字体、
+字号与行距调节、单页/双页、Zen 沉浸模式、键盘与滚轮与触屏适配
+
+**朗读** — 基于浏览器原生 `speechSynthesis`，逐句高亮并自动跟随滚动
+
+**AI 伴读** — 自带 Key 模式，支持解释、总结、关键词、翻译、续写、章节纠错。
+兼容任何 OpenAI 格式接口（内置 DeepSeek / OpenAI / 通义千问 / Kimi / 智谱 预设）。
+请求从浏览器直连所填服务，不经中转，Key 只存本地。
+
+**备份** — 完整 JSON 导出与恢复（含全部正文、笔记、书签、设置）
+
+### 快捷键
+
+| 按键 | 功能 |
+|---|---|
+| `←` `→` `空格` `PageUp/Down` | 翻页 |
+| `T` / `F` / `N` / `A` | 目录 / 搜索 / 笔记 / AI 面板 |
+| `Z` | 沉浸模式 |
+| `Esc` | 关闭面板 |
+
+---
+
+## 架构
+
+**统一书稿模型** —— 所有格式最终都转成
+`{ title, author, cover, chapters: [{ title, html, text }], toc }`，
+阅读引擎只认这一种结构，新增格式不用改引擎。
+
+**双存储后端** —— `js/db.js` 对外接口完全一致，内部自动选择：
+
+| 打开方式 | 存储位置 |
+|---|---|
+| 双击 `启动墨语.bat` | `data/` 目录（文件存储） |
+| 直接双击 `index.html`（`file://`） | 浏览器 IndexedDB（兜底） |
+
+启动时探测 `./api/ping`，探不到就退回 IndexedDB。上层代码无需区分。
+
+**分页用 CSS 多栏** —— `.page-inner` 同时是排版容器和横向滚动容器，
+滚动步长严格等于「栏宽 + 栏间距」。
+
+**依赖本地化** —— 第三方库打包进 `lib/`，页面零外部引用，断网可用。
+
+---
+
+## 常见问题
+
+**Q：双击 `index.html` 可以吗？**
+可以，但数据会存进浏览器而不是文件夹。原因：ES 模块的同源策略决定了
+纯 `file://` 无法加载模块脚本。请用 `启动墨语.bat`。
+
+**Q：会泄露我的阅读记录吗？**
+不会。数据只在你自己的机器上，不上传任何服务器，也没有账户体系。
+唯一的对外请求是你自己配置的 AI 接口。
+
+**Q：支持 Mac / Linux 吗？**
+目前启动器是 Windows 的 `.bat`，服务端脚本是 PowerShell。
+核心应用是纯前端，需要 Node 或 Python 起个静态服务也能用，
+但数据会落到浏览器 IndexedDB 而非文件夹。
+
+**Q：扫描版 PDF 能搜索吗？**
+不能。没有文本层时只能作为图片显示，无法搜索或划线。
+
+**Q：书特别多会怎样？**
+`data/books/` 里每本书一个独立文件，上千本也能正常工作。
+`library.json` 只存元数据，随书量增长会变大，上万本时建议改用数据库。
+
+**Q：AI 功能要钱吗？**
+要，但费用由你用的服务方收。本项目零中转、不加价、不经手你的 Key 和请求。
+
+---
+
+## 已知限制
+
+- 不提供自动云同步 —— 换电脑靠复制文件夹
+- 朗读音质取决于浏览器与系统语音引擎
+- 极老的 `.doc` 二进制格式可能无法解析，建议另存为 `.docx`
+- 扫描版 PDF 无文本层，只能看图
+- MOBI / AZW3 的 KF8 压缩流只做了尽力解析，复杂文件可能失败
+
+---
+
+## 反馈与提问
+
+遇到问题、想要某个功能，或者单纯觉得哪里别扭，都欢迎开
+[issue](https://github.com/chengwerit/moyu-reader/issues/new) 告诉我。
+
+**提问前先看一眼 [常见问题](#常见问题)**，扫描版 PDF 搜不了、Mac / Linux 暂不支持这类情况
+都已经写在上面了，能省你和我各一次往返。
+
+开 issue 时带上这三样，能快很多：
+
+| 信息 | 怎么拿到 |
+|---|---|
+| 系统版本 | 设置 → 系统 → 关于 |
+| 浏览器及版本 | 浏览器地址栏右侧的「⋯」→ 关于 |
+| 问题现象 | 截图最好，或者把黑窗口里的报错原文贴上来 |
+
+**其他方式**
+
+- 提功能想法：开 issue 时在「类型」里选「功能想法」即可，不用在标题里写什么
+- 欢迎 Star。代码层面的贡献（提 PR）请先开 issue 讨论方向，避免白做
+
+响应时间：工作日通常 1～3 天。没人回不代表没人看，可能只是没看到。
+
+---
+
+## 许可
+
+本项目采用 [MIT 许可](LICENSE)。
+
+`lib/` 目录内的第三方库版权归各自作者所有，详见 [lib/LICENSE.md](lib/LICENSE.md)：
+
+- JSZip — MIT
+- marked — MIT
+- PDF.js — Apache License 2.0
+
+「墨语」为本项目名称，与上述第三方项目无关联。

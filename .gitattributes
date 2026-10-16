@@ -1,1 +1,23 @@
-IyDmnKzpobnnm67nmoTnvJbnoIHkuI7ooYzlsL7op4TliJnmmK/noaznuqbmnZ/vvIzkuI3mmK/po47moLzlgY/lpb3jgIIKIyDor6bop4Eg5byA5Y+R56yU6K6wLm1k44CM5L6/5pC65YyW5pS56YCg44CN56ug6IqC6YeM6K6w5b2V55qE5Z2R44CCCgojIFBvd2VyU2hlbGwg6ISa5pys77ya5b+F6aG7IFVURi04IHdpdGggQk9N77yM5LiU55SoIENSTEbjgIIKIyBQUyA1LjEg6K+75pegIEJPTSDnmoQgVVRGLTgg5Lya5oqK5Lit5paH5b2T5Lmx56CB77yM55u05o6l5oiq5pat6K+t5rOV57uT5p6E44CCCiMg5rOo5oSPIHdvcmtpbmctdHJlZS1lbmNvZGluZyDlj6rmmK/ovazmjaLnvJbnoIHvvIxlb2wg5Yaz5a6a6KGM5bC+IOKAlOKAlCDkuKTogIXpg73opoHjgIIKKi5wczEgdGV4dCBlb2w9Y3JsZiB3b3JraW5nLXRyZWUtZW5jb2Rpbmc9VVRGLTgKCiMg5om55aSE55CG77ya5b+F6aG757qvIEFTQ0lJICsgQ1JMRuOAggojIGNtZCDmjIkgR0JLIOivu+aJueWkhOeQhu+8jFVURi04IOS4reaWh+S8muegtOWdj+WRveS7pOihjOino+aekOOAggoqLmJhdCB0ZXh0IGVvbD1jcmxmCgojIOS+nei1luW6k+aYr+WOi+e8qei/h+eahOWNleihjOaWh+S7tu+8jOS4jeimgeWKqOWug+S7rApsaWIvKi5qcyAtdGV4dAoKIyDlhbbkvZnmlofmnKzmlofku7bnu5/kuIAgQ1JMRu+8jOmAgumFjSBXaW5kb3dzIOS7k+W6k+S4u+imgei0oeeMruiAhQoqLm1kIHRleHQgZW9sPWNybGYKKi5odG1sIHRleHQgZW9sPWNybGYKKi5jc3MgdGV4dCBlb2w9Y3JsZgoqLmpzb24gdGV4dCBlb2w9Y3JsZgoqLndlYm1hbmlmZXN0IHRleHQgZW9sPWNybGYKanMvKi5qcyB0ZXh0IGVvbD1jcmxmCiouY2pzIHRleHQgZW9sPWNybGY=
+# 本项目的编码与行尾规则是硬约束，不是风格偏好。
+# 详见 开发笔记.md「便携化改造」章节里记录的坑。
+
+# PowerShell 脚本：必须 UTF-8 with BOM，且用 CRLF。
+# PS 5.1 读无 BOM 的 UTF-8 会把中文当乱码，直接截断语法结构。
+# 注意 working-tree-encoding 只是转换编码，eol 决定行尾 —— 两者都要。
+*.ps1 text eol=crlf working-tree-encoding=UTF-8
+
+# 批处理：必须纯 ASCII + CRLF。
+# cmd 按 GBK 读批处理，UTF-8 中文会破坏命令行解析。
+*.bat text eol=crlf
+
+# 依赖库是压缩过的单行文件，不要动它们
+lib/*.js -text
+
+# 其余文本文件统一 CRLF，适配 Windows 仓库主要贡献者
+*.md text eol=crlf
+*.html text eol=crlf
+*.css text eol=crlf
+*.json text eol=crlf
+*.webmanifest text eol=crlf
+js/*.js text eol=crlf
+*.cjs text eol=crlf

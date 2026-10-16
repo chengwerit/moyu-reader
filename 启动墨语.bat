@@ -1,1 +1,30 @@
-QGVjaG8gb2ZmDQpjaGNwIDY1MDAxID5udWwgMj4mMQ0KdGl0bGUgTW95dSBSZWFkZXINCmNkIC9kICIlfmRwMCINCg0KUkVNIFByZWZlciB0aGUgYnVpbHQtaW4gV2luZG93cyBQb3dlclNoZWxsIC0gbm8gaW5zdGFsbCBuZWVkZWQuDQp3aGVyZSBwb3dlcnNoZWxsID5udWwgMj4mMQ0KaWYgJWVycm9ybGV2ZWwlPT0wICgNCiAgcG93ZXJzaGVsbCAtTm9Qcm9maWxlIC1FeGVjdXRpb25Qb2xpY3kgQnlwYXNzIC1GaWxlICIlfmRwMHNlcnZlci5wczEiDQogIGdvdG8gOmRvbmUNCikNCg0KUkVNIEZhbGxiYWNrIGZvciB0cmltbWVkLWRvd24gV2luZG93cyBidWlsZHMgdGhhdCBzaGlwIHB3c2ggaW5zdGVhZC4NCndoZXJlIHB3c2ggPm51bCAyPiYxDQppZiAlZXJyb3JsZXZlbCU9PTAgKA0KICBwd3NoIC1Ob1Byb2ZpbGUgLUZpbGUgIiV+ZHAwc2VydmVyLnBzMSINCiAgZ290byA6ZG9uZQ0KKQ0KDQplY2hvLg0KZWNobyAgIFBvd2VyU2hlbGwgbm90IGZvdW5kLiBDYW5ub3Qgc3RhcnQgdGhlIGxvY2FsIHNlcnZlci4NCmVjaG8gICBFbmFibGUgIldpbmRvd3MgUG93ZXJTaGVsbCIgaW4gV2luZG93cyBGZWF0dXJlcyBhbmQgdHJ5IGFnYWluLg0KZWNoby4NCnBhdXNlDQpleGl0IC9iIDENCg0KOmRvbmUNCmVjaG8uDQplY2hvICAgTW95dSBleGl0ZWQuDQpwYXVzZQ==
+@echo off
+chcp 65001 >nul 2>&1
+title Moyu Reader
+cd /d "%~dp0"
+
+REM Prefer the built-in Windows PowerShell - no install needed.
+where powershell >nul 2>&1
+if %errorlevel%==0 (
+  powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0server.ps1"
+  goto :done
+)
+
+REM Fallback for trimmed-down Windows builds that ship pwsh instead.
+where pwsh >nul 2>&1
+if %errorlevel%==0 (
+  pwsh -NoProfile -File "%~dp0server.ps1"
+  goto :done
+)
+
+echo.
+echo   PowerShell not found. Cannot start the local server.
+echo   Enable "Windows PowerShell" in Windows Features and try again.
+echo.
+pause
+exit /b 1
+
+:done
+echo.
+echo   Moyu exited.
+pause

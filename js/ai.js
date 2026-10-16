@@ -1,1 +1,83 @@
-LyogPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0NCiAgIGFpLmpzIOKAlCBBSSDkvLTor7vvvIjoh6rluKYgS2V5IOaooeW8j++8iQ0KICAg5YW85a655Lu75L2VIE9wZW5BSSDmoLzlvI/nmoTmjqXlj6PvvIzor7fmsYLnm7TmjqXlj5HlvoDnlKjmiLfoh6rlt7HphY3nva7nmoTmnI3liqHvvIwNCiAgIOS4jee7j+i/h+S7u+S9leesrOS4ieaWueS4rei9rOOAgg0KICAgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0gKi8NCg0KaW1wb3J0ICogYXMgZGIgZnJvbSAnLi9kYi5qcyc7DQoNCmNvbnN0IFBSRVNFVFMgPSBbDQogIHsgbmFtZTogJ0RlZXBTZWVrJywgYmFzZVVybDogJ2h0dHBzOi8vYXBpLmRlZXBzZWVrLmNvbS92MScsIG1vZGVsOiAnZGVlcHNlZWstY2hhdCcgfSwNCiAgeyBuYW1lOiAnT3BlbkFJJywgYmFzZVVybDogJ2h0dHBzOi8vYXBpLm9wZW5haS5jb20vdjEnLCBtb2RlbDogJ2dwdC00by1taW5pJyB9LA0KICB7IG5hbWU6ICfpgJrkuYnljYPpl64nLCBiYXNlVXJsOiAnaHR0cHM6Ly9kYXNoc2NvcGUuYWxpeXVuY3MuY29tL2NvbXBhdGlibGUtbW9kZS92MScsIG1vZGVsOiAncXdlbi1wbHVzJyB9LA0KICB7IG5hbWU6ICdLaW1pJywgYmFzZVVybDogJ2h0dHBzOi8vYXBpLm1vb25zaG90LmNuL3YxJywgbW9kZWw6ICdtb29uc2hvdC12MS04aycgfSwNCiAgeyBuYW1lOiAn5pm66LCxIEdMTScsIGJhc2VVcmw6ICdodHRwczovL29wZW4uYmlnbW9kZWwuY24vYXBpL3BhYXMvdjQnLCBtb2RlbDogJ2dsbS00LWZsYXNoJyB9DQpdOw0KDQpleHBvcnQgZnVuY3Rpb24gcHJlc2V0cygpIHsgcmV0dXJuIFBSRVNFVFM7IH0NCg0KZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdldENvbmZpZygpIHsNCiAgcmV0dXJuIChhd2FpdCBkYi5nZXRLVignYWlDb25maWcnLCBudWxsKSkgfHwgeyBiYXNlVXJsOiAnJywgYXBpS2V5OiAnJywgbW9kZWw6ICcnIH07DQp9DQoNCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBzZXRDb25maWcoY2ZnKSB7IGF3YWl0IGRiLnNldEtWKCdhaUNvbmZpZycsIGNmZyk7IH0NCmV4cG9ydCBmdW5jdGlvbiBpc0NvbmZpZ3VyZWQoY2ZnKSB7IHJldHVybiAhIShjZmc/LmJhc2VVcmwgJiYgY2ZnPy5hcGlLZXkgJiYgY2ZnPy5tb2RlbCk7IH0NCg0KLyoqDQogKiDmtYHlvI/lr7nor53jgIJvbkRlbHRhKHRleHREZWx0YSkg6YCQ5q615Zue6LCD44CCDQogKi8NCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBjaGF0KG1lc3NhZ2VzLCB7IG9uRGVsdGEsIHNpZ25hbCB9ID0ge30pIHsNCiAgY29uc3QgY2ZnID0gYXdhaXQgZ2V0Q29uZmlnKCk7DQogIGlmICghaXNDb25maWd1cmVkKGNmZykpIHRocm93IG5ldyBFcnJvcign6K+35YWI5Zyo6K6+572u6YeM5aGr5YaZIEFJIOaOpeWPo+WcsOWdgOOAgUtleSDlkozmqKHlnovlkI0nKTsNCg0KICBjb25zdCB1cmwgPSBjZmcuYmFzZVVybC5yZXBsYWNlKC9cLyskLywgJycpICsgJy9jaGF0L2NvbXBsZXRpb25zJzsNCiAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2godXJsLCB7DQogICAgbWV0aG9kOiAnUE9TVCcsDQogICAgaGVhZGVyczogeyAnQ29udGVudC1UeXBlJzogJ2FwcGxpY2F0aW9uL2pzb24nLCBBdXRob3JpemF0aW9uOiBgQmVhcmVyICR7Y2ZnLmFwaUtleX1gIH0sDQogICAgYm9keTogSlNPTi5zdHJpbmdpZnkoeyBtb2RlbDogY2ZnLm1vZGVsLCBtZXNzYWdlcywgc3RyZWFtOiB0cnVlLCB0ZW1wZXJhdHVyZTogMC42IH0pLA0KICAgIHNpZ25hbA0KICB9KTsNCg0KICBpZiAoIXJlcy5vaykgew0KICAgIGxldCBkZXRhaWwgPSAnJzsNCiAgICB0cnkgeyBkZXRhaWwgPSAoYXdhaXQgcmVzLmpzb24oKSk/LmVycm9yPy5tZXNzYWdlIHx8ICcnOyB9IGNhdGNoIHt9DQogICAgdGhyb3cgbmV3IEVycm9yKGBBSSDmnI3liqHov5Tlm54gJHtyZXMuc3RhdHVzfSR7ZGV0YWlsID8gJ++8micgKyBkZXRhaWwgOiAnJ31gKTsNCiAgfQ0KDQogIGNvbnN0IHJlYWRlciA9IHJlcy5ib2R5LmdldFJlYWRlcigpOw0KICBjb25zdCBkZWNvZGVyID0gbmV3IFRleHREZWNvZGVyKCk7DQogIGxldCBidWZmZXIgPSAnJywgZnVsbCA9ICcnOw0KDQogIHdoaWxlICh0cnVlKSB7DQogICAgY29uc3QgeyBkb25lLCB2YWx1ZSB9ID0gYXdhaXQgcmVhZGVyLnJlYWQoKTsNCiAgICBpZiAoZG9uZSkgYnJlYWs7DQogICAgYnVmZmVyICs9IGRlY29kZXIuZGVjb2RlKHZhbHVlLCB7IHN0cmVhbTogdHJ1ZSB9KTsNCiAgICBjb25zdCBsaW5lcyA9IGJ1ZmZlci5zcGxpdCgnXG4nKTsNCiAgICBidWZmZXIgPSBsaW5lcy5wb3AoKSB8fCAnJzsNCiAgICBmb3IgKGNvbnN0IGxpbmUgb2YgbGluZXMpIHsNCiAgICAgIGNvbnN0IHMgPSBsaW5lLnRyaW0oKTsNCiAgICAgIGlmICghcy5zdGFydHNXaXRoKCdkYXRhOicpKSBjb250aW51ZTsNCiAgICAgIGNvbnN0IHBheWxvYWQgPSBzLnNsaWNlKDUpLnRyaW0oKTsNCiAgICAgIGlmIChwYXlsb2FkID09PSAnW0RPTkVdJykgY29udGludWU7DQogICAgICB0cnkgew0KICAgICAgICBjb25zdCBqc29uID0gSlNPTi5wYXJzZShwYXlsb2FkKTsNCiAgICAgICAgY29uc3QgZGVsdGEgPSBqc29uLmNob2ljZXM/LlswXT8uZGVsdGE/LmNvbnRlbnQ7DQogICAgICAgIGlmIChkZWx0YSkgeyBmdWxsICs9IGRlbHRhOyBvbkRlbHRhICYmIG9uRGVsdGEoZGVsdGEsIGZ1bGwpOyB9DQogICAgICB9IGNhdGNoIHsgLyog5b+955Wl5LiN5a6M5pW055qE5YiG54mHICovIH0NCiAgICB9DQogIH0NCiAgcmV0dXJuIGZ1bGw7DQp9DQoNCi8qKiDpooTnva7ku7vliqHvvJrnu5nkuIDmrrXmlofmnKzkuIDkuKrmmI7noa7mjIfku6QgKi8NCmV4cG9ydCBjb25zdCBUQVNLUyA9IHsNCiAgZXhwbGFpbjogeyBsYWJlbDogJ+ino+mHiui/meautScsIHByb21wdDogJ+ivt+eUqOmAmuS/l+eahOivreiogOino+mHiuS4i+mdoui/meauteaWh+Wtl++8jOivtOaYjuWug+eahOWQq+S5ieWSjOiDjOaZr++8jOS4jeimgei/h+W6puW7tuS8uOOAgicgfSwNCiAgc3VtbWFyeTogeyBsYWJlbDogJ+aAu+e7k+imgeeCuScsIHByb21wdDogJ+ivt+aKiuS4i+mdoui/meauteaWh+Wtl+WOi+e8qeaIkCAzIOadoeS7peWGheeahOimgeeCue+8jOeUqOWIl+ihqOi+k+WHuuOAgicgfSwNCiAga2V5d29yZHM6IHsgbGFiZWw6ICfmj5Dlj5blhbPplK7or40nLCBwcm9tcHQ6ICfor7fmj5Dlj5bkuIvpnaLov5nmrrXmloflrZfkuK3nmoTlhbPplK7or43vvIzovpPlh7rkuLrpgJflj7fliIbpmpTnmoTliJfooajjgIInIH0sDQogIHRyYW5zbGF0ZTogeyBsYWJlbDogJ+e/u+ivkeaIkOiLseaWhycsIHByb21wdDogJ+ivt+aKiuS4i+mdoui/meauteaWh+Wtl+e/u+ivkeaIkOiLseaWh++8jOWPqui+k+WHuuivkeaWh+OAgicgfSwNCiAgY29udGludWU6IHsgbGFiZWw6ICfmjqXnnYDlvoDkuIvmg7MnLCBwcm9tcHQ6ICfor7fln7rkuo7kuIvpnaLov5nmrrXmloflrZfvvIznu63lhpnkuIDkuKrlkIjnkIbnmoTkuIvkuIDmrrXvvIzkv53mjIHlkIzmoLfnmoTor63msJTlkozpo47moLzvvIznuqYgMTUwIOWtl+OAgicgfQ0KfTsNCg0KZXhwb3J0IGZ1bmN0aW9uIHN5c3RlbVByb21wdChib29rVGl0bGUpIHsNCiAgcmV0dXJuIGDkvaDmmK/kuIDkvY3kuK3mlofpmIXor7vliqnmiYvvvIzmraPlnKjpmarlkIznlKjmiLfpmIXor7vjgIoke2Jvb2tUaXRsZSB8fCAn5b2T5YmN5Lmm57GNJ33jgIvjgILlm57nrZTopoHnroDmtIHjgIHlh4bnoa7jgIHmnInmnaHnkIbvvIznm7TmjqXnu5nnu5PorrrvvIzkuI3opoHlrqLlpZfjgILnlKjmiLfkvb/nlKjkuK3mlofmj5Dpl67ml7bnlKjkuK3mloflm57nrZTjgIJgOw0KfQ0K
+/* ==========================================================================
+   ai.js — AI 伴读（自带 Key 模式）
+   兼容任何 OpenAI 格式的接口，请求直接发往用户自己配置的服务，
+   不经过任何第三方中转。
+   ========================================================================== */
+
+import * as db from './db.js';
+
+const PRESETS = [
+  { name: 'DeepSeek', baseUrl: 'https://api.deepseek.com/v1', model: 'deepseek-chat' },
+  { name: 'OpenAI', baseUrl: 'https://api.openai.com/v1', model: 'gpt-4o-mini' },
+  { name: '通义千问', baseUrl: 'https://dashscope.aliyuncs.com/compatible-mode/v1', model: 'qwen-plus' },
+  { name: 'Kimi', baseUrl: 'https://api.moonshot.cn/v1', model: 'moonshot-v1-8k' },
+  { name: '智谱 GLM', baseUrl: 'https://open.bigmodel.cn/api/paas/v4', model: 'glm-4-flash' }
+];
+
+export function presets() { return PRESETS; }
+
+export async function getConfig() {
+  return (await db.getKV('aiConfig', null)) || { baseUrl: '', apiKey: '', model: '' };
+}
+
+export async function setConfig(cfg) { await db.setKV('aiConfig', cfg); }
+export function isConfigured(cfg) { return !!(cfg?.baseUrl && cfg?.apiKey && cfg?.model); }
+
+/**
+ * 流式对话。onDelta(textDelta) 逐段回调。
+ */
+export async function chat(messages, { onDelta, signal } = {}) {
+  const cfg = await getConfig();
+  if (!isConfigured(cfg)) throw new Error('请先在设置里填写 AI 接口地址、Key 和模型名');
+
+  const url = cfg.baseUrl.replace(/\/+$/, '') + '/chat/completions';
+  const res = await fetch(url, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${cfg.apiKey}` },
+    body: JSON.stringify({ model: cfg.model, messages, stream: true, temperature: 0.6 }),
+    signal
+  });
+
+  if (!res.ok) {
+    let detail = '';
+    try { detail = (await res.json())?.error?.message || ''; } catch {}
+    throw new Error(`AI 服务返回 ${res.status}${detail ? '：' + detail : ''}`);
+  }
+
+  const reader = res.body.getReader();
+  const decoder = new TextDecoder();
+  let buffer = '', full = '';
+
+  while (true) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    buffer += decoder.decode(value, { stream: true });
+    const lines = buffer.split('\n');
+    buffer = lines.pop() || '';
+    for (const line of lines) {
+      const s = line.trim();
+      if (!s.startsWith('data:')) continue;
+      const payload = s.slice(5).trim();
+      if (payload === '[DONE]') continue;
+      try {
+        const json = JSON.parse(payload);
+        const delta = json.choices?.[0]?.delta?.content;
+        if (delta) { full += delta; onDelta && onDelta(delta, full); }
+      } catch { /* 忽略不完整的分片 */ }
+    }
+  }
+  return full;
+}
+
+/** 预置任务：给一段文本一个明确指令 */
+export const TASKS = {
+  explain: { label: '解释这段', prompt: '请用通俗的语言解释下面这段文字，说明它的含义和背景，不要过度延伸。' },
+  summary: { label: '总结要点', prompt: '请把下面这段文字压缩成 3 条以内的要点，用列表输出。' },
+  keywords: { label: '提取关键词', prompt: '请提取下面这段文字中的关键词，输出为逗号分隔的列表。' },
+  translate: { label: '翻译成英文', prompt: '请把下面这段文字翻译成英文，只输出译文。' },
+  continue: { label: '接着往下想', prompt: '请基于下面这段文字，续写一个合理的下一段，保持同样的语气和风格，约 150 字。' }
+};
+
+export function systemPrompt(bookTitle) {
+  return `你是一位中文阅读助手，正在陪同用户阅读《${bookTitle || '当前书籍'}》。回答要简洁、准确、有条理，直接给结论，不要客套。用户使用中文提问时用中文回答。`;
+}

@@ -1,1 +1,108 @@
-IiIiDQrmiZPljIXloqjor63vvIznlJ/miJDkuKTkuKogWklQ77yaDQoNCiAgMS4g5aKo6K+tLeS9v+eUqOeJiC56aXAgICAgICDnu5npnZ7mioDmnK/nlKjmiLcNCiAgMi4g5aKo6K+tLeW8gOWPkeeJiC56aXAgICAgICDlrozmlbTku5PlupPlv6vnhafvvIzkvpvlpIfku73miJbkuozmrKHlvIDlj5ENCg0K5YWz6ZSu77ya5omT5YyF5b+F6aG75L+d5oyB5a2X6IqC5Y6f5qC344CCc2VydmVyLnBzMSDkvp3otZYgVVRGLTggQk9N44CB5ZCv5Yqo5aKo6K+tLmJhdCDkvp3otZYNCue6ryBBU0NJSSArIENSTEbvvIzku7vkvZXovazmjaLpg73kvJrorqnlroPku6zlnKjnlKjmiLfmnLrlmajkuIrmiZPkuI3lvIDjgILmiYDku6XnlKggWklQX0RFRkxBVEVEDQrpgJDlrZfoioLlhpnlhaXvvIzkuI3lgZrku7vkvZXmlofmnKzlpITnkIbjgIINCiIiIg0KaW1wb3J0IG9zDQppbXBvcnQgemlwZmlsZQ0KaW1wb3J0IHNodXRpbA0KDQpST09UID0gciJDOlxVc2Vyc1xsaW5saW5cV29ya0J1ZGR5XHdvcmsgQnVkZHkg5bel5L2c56m66Ze0XG1veXUtcmVhZGVyIg0KREVTS1RPUCA9IHIiQzpcVXNlcnNcbGlubGluXERlc2t0b3AiDQpCVUlMRCA9IG9zLnBhdGguam9pbihST09ULCAiLnBhY2siKQ0KDQojIOS9v+eUqOeJiO+8muWPquWQq+S9v+eUqOiAheS4juWNj+S9nOiAhemcgOimgeeahA0KVVNFUl9GSUxFUyA9IFsNCiAgICAi5ZCv5Yqo5aKo6K+tLmJhdCIsDQogICAgIuS9v+eUqOivtOaYji5tZCIsDQogICAgIumhueebruivtOaYji5tZCIsICAgICAgICAgICMg5oOz55+l6YGT5oCO5LmI5pS544CB55yL57uT5p6E55qE5Y2P5L2c6ICF5Lya6ZyA6KaBDQogICAgImluZGV4Lmh0bWwiLA0KICAgICJtYW5pZmVzdC53ZWJtYW5pZmVzdCIsDQogICAgInNlcnZlci5wczEiLA0KICAgICJzdy5qcyIsDQogICAgImNzcy9hcHAuY3NzIiwNCiAgICAianMvYWkuanMiLA0KICAgICJqcy9hcHAuanMiLA0KICAgICJqcy9kYi5qcyIsDQogICAgImpzL2VuZ2luZS5qcyIsDQogICAgImpzL3BhcnNlcnMuanMiLA0KICAgICJsaWIvTElDRU5TRS5tZCIsDQogICAgImxpYi9qc3ppcC5taW4uanMiLA0KICAgICJsaWIvbWFya2VkLm1pbi5qcyIsDQogICAgImxpYi9wZGYubWluLmpzIiwNCiAgICAibGliL3BkZi53b3JrZXIubWluLmpzIiwNCl0NCg0KIyDlvIDlj5HniYjvvJrku5PlupPph4znmoTlhajpg6jlhoXlrrnvvIjlkKsgLmdpdCDljoblj7LkuI7lvIDlj5HmlofmoaPvvIkNCkRFVl9FWENMVURFX0RJUlMgPSB7ImRhdGEiLCAic2NyZWVuc2hvdHMiLCAibm9kZV9tb2R1bGVzIiwgIi52c2NvZGUiLCAiLmlkZWEiLCAiLnBhY2sifQ0KDQoNCmRlZiBjb2xsZWN0X2RldigpOg0KICAgIG91dCA9IFtdDQogICAgZm9yIGRpcnBhdGgsIGRpcm5hbWVzLCBmaWxlbmFtZXMgaW4gb3Mud2FsayhST09UKToNCiAgICAgICAgcmVsID0gb3MucGF0aC5yZWxwYXRoKGRpcnBhdGgsIFJPT1QpDQogICAgICAgIHBhcnRzID0gW10gaWYgcmVsID09ICIuIiBlbHNlIHJlbC5zcGxpdChvcy5zZXApDQogICAgICAgIGRpcm5hbWVzWzpdID0gWw0KICAgICAgICAgICAgZCBmb3IgZCBpbiBkaXJuYW1lcw0KICAgICAgICAgICAgaWYgZCBub3QgaW4gREVWX0VYQ0xVREVfRElSUw0KICAgICAgICAgICAgYW5kIGQgIT0gIi5wYWNrIg0KICAgICAgICBdDQogICAgICAgIGZvciBmbiBpbiBmaWxlbmFtZXM6DQogICAgICAgICAgICByID0gb3MucGF0aC5ub3JtcGF0aChvcy5wYXRoLmpvaW4ocmVsLCBmbikpIGlmIHJlbCAhPSAiLiIgZWxzZSBmbg0KICAgICAgICAgICAgIyDot7Pov4fmjqjpgIHohJrmnKzkuI7moYzpnaLns7vnu5/mlofku7bvvIzkuI3lsZ7kuo7pobnnm67lhoXlrrkNCiAgICAgICAgICAgICMg5rOo5oSP77ya5L2/55So6K+05piOLm1kIOaYr+W3suaPkOS6pOeahOmhueebruaWh+aho++8jOW8gOWPkeeJiOW/hemhu+W4puS4ig0KICAgICAgICAgICAgaWYgZm4gaW4geyJwdXNoLXZpYS1hcGkuc2giLCAiVGh1bWJzLmRiIiwgImRlc2t0b3AuaW5pIn06DQogICAgICAgICAgICAgICAgY29udGludWUNCiAgICAgICAgICAgIGlmIGZuLmVuZHN3aXRoKCgiLnRtcCIsICIubG9nIikpOg0KICAgICAgICAgICAgICAgIGNvbnRpbnVlDQogICAgICAgICAgICBvdXQuYXBwZW5kKHIucmVwbGFjZShvcy5zZXAsICIvIikpDQogICAgcmV0dXJuIHNvcnRlZChvdXQpDQoNCg0KZGVmIG1ha2VfemlwKHRhcmdldCwgcHJlZml4LCBmaWxlcywgZXh0cmFfZGlycz0oKSk6DQogICAgaWYgb3MucGF0aC5leGlzdHModGFyZ2V0KToNCiAgICAgICAgb3MucmVtb3ZlKHRhcmdldCkNCiAgICBjb3VudCA9IDANCiAgICB0b3RhbCA9IDANCiAgICB3aXRoIHppcGZpbGUuWmlwRmlsZSh0YXJnZXQsICJ3IiwgemlwZmlsZS5aSVBfREVGTEFURUQsIGNvbXByZXNzbGV2ZWw9OSkgYXMgejoNCiAgICAgICAgZm9yIHJlbCBpbiBmaWxlczoNCiAgICAgICAgICAgIHNyYyA9IG9zLnBhdGguam9pbihST09ULCByZWwucmVwbGFjZSgiLyIsIG9zLnNlcCkpDQogICAgICAgICAgICBpZiBub3Qgb3MucGF0aC5pc2ZpbGUoc3JjKToNCiAgICAgICAgICAgICAgICBwcmludChmIiAg6Lez6L+H77yI5LiN5a2Y5Zyo77yJOiB7cmVsfSIpDQogICAgICAgICAgICAgICAgY29udGludWUNCiAgICAgICAgICAgIGFyYyA9IGYie3ByZWZpeH0ve3JlbH0iIGlmIHByZWZpeCBlbHNlIHJlbA0KICAgICAgICAgICAgd2l0aCBvcGVuKHNyYywgInJiIikgYXMgZjoNCiAgICAgICAgICAgICAgICBkYXRhID0gZi5yZWFkKCkNCiAgICAgICAgICAgIHoud3JpdGVzdHIoYXJjLCBkYXRhKQ0KICAgICAgICAgICAgY291bnQgKz0gMQ0KICAgICAgICAgICAgdG90YWwgKz0gbGVuKGRhdGEpDQogICAgICAgICMg56m655uu5b2V5Y2g5L2N77yM6Kej5Y6L5ZCOIGRhdGEvIOWwseWtmOWcqA0KICAgICAgICBmb3IgZCBpbiBleHRyYV9kaXJzOg0KICAgICAgICAgICAgei53cml0ZXN0cihmIntwcmVmaXh9L3tkfS8iIGlmIHByZWZpeCBlbHNlIGYie2R9LyIsIGIiIikNCiAgICBzaXplID0gb3MucGF0aC5nZXRzaXplKHRhcmdldCkNCiAgICBwcmludChmIiAge29zLnBhdGguYmFzZW5hbWUodGFyZ2V0KX0iKQ0KICAgIHByaW50KGYiICAgIOaWh+S7tiB7Y291bnR9IOS4qu+8jOWOn+WniyB7dG90YWwvMTAyNC8xMDI0Oi4yZn0gTULvvIzljovnvKnlkI4ge3NpemUvMTAyNC8xMDI0Oi4yZn0gTUIiKQ0KICAgIHJldHVybiB0YXJnZXQNCg0KDQpkZWYgbWFpbigpOg0KICAgIGlmIG9zLnBhdGguZXhpc3RzKEJVSUxEKToNCiAgICAgICAgc2h1dGlsLnJtdHJlZShCVUlMRCwgaWdub3JlX2Vycm9ycz1UcnVlKQ0KICAgIG9zLm1ha2VkaXJzKEJVSUxELCBleGlzdF9vaz1UcnVlKQ0KDQogICAgcHJpbnQoIuaJk+S9v+eUqOeJiOKApiIpDQogICAgbWFrZV96aXAob3MucGF0aC5qb2luKERFU0tUT1AsICLloqjor60t5L2/55So54mILnppcCIpLCAi5aKo6K+tIiwgVVNFUl9GSUxFUywgZXh0cmFfZGlycz1bImRhdGEiXSkNCg0KICAgIHByaW50KCJcbuaJk+W8gOWPkeeJiOKApiIpDQogICAgbWFrZV96aXAob3MucGF0aC5qb2luKERFU0tUT1AsICLloqjor60t5byA5Y+R54mILnppcCIpLCAibW95dS1yZWFkZXIiLCBjb2xsZWN0X2RldigpLCBleHRyYV9kaXJzPVsiZGF0YSJdKQ0KDQogICAgcHJpbnQoIlxu5a6M5oiQ44CC5Lik5Liq5YyF6YO95Zyo5qGM6Z2i44CCIikNCg0KDQppZiBfX25hbWVfXyA9PSAiX19tYWluX18iOg0KICAgIG1haW4oKQ==
+"""
+打包墨语，生成两个 ZIP：
+
+  1. 墨语-使用版.zip      给非技术用户
+  2. 墨语-开发版.zip      完整仓库快照，供备份或二次开发
+
+关键：打包必须保持字节原样。server.ps1 依赖 UTF-8 BOM、启动墨语.bat 依赖
+纯 ASCII + CRLF，任何转换都会让它们在用户机器上打不开。所以用 ZIP_DEFLATED
+逐字节写入，不做任何文本处理。
+"""
+import os
+import zipfile
+import shutil
+
+ROOT = r"C:\Users\linlin\WorkBuddy\work Buddy 工作空间\moyu-reader"
+DESKTOP = r"C:\Users\linlin\Desktop"
+BUILD = os.path.join(ROOT, ".pack")
+
+# 使用版：只含使用者与协作者需要的
+USER_FILES = [
+    "启动墨语.bat",
+    "使用说明.md",
+    "项目说明.md",          # 想知道怎么改、看结构的协作者会需要
+    "index.html",
+    "manifest.webmanifest",
+    "server.ps1",
+    "sw.js",
+    "css/app.css",
+    "js/ai.js",
+    "js/app.js",
+    "js/db.js",
+    "js/engine.js",
+    "js/parsers.js",
+    "lib/LICENSE.md",
+    "lib/jszip.min.js",
+    "lib/marked.min.js",
+    "lib/pdf.min.js",
+    "lib/pdf.worker.min.js",
+]
+
+# 开发版：仓库里的全部内容（含 .git 历史与开发文档）
+DEV_EXCLUDE_DIRS = {"data", "screenshots", "node_modules", ".vscode", ".idea", ".pack"}
+
+
+def collect_dev():
+    out = []
+    for dirpath, dirnames, filenames in os.walk(ROOT):
+        rel = os.path.relpath(dirpath, ROOT)
+        parts = [] if rel == "." else rel.split(os.sep)
+        dirnames[:] = [
+            d for d in dirnames
+            if d not in DEV_EXCLUDE_DIRS
+            and d != ".pack"
+        ]
+        for fn in filenames:
+            r = os.path.normpath(os.path.join(rel, fn)) if rel != "." else fn
+            # 跳过推送脚本与桌面系统文件，不属于项目内容
+            # 注意：使用说明.md 是已提交的项目文档，开发版必须带上
+            if fn in {"push-via-api.sh", "Thumbs.db", "desktop.ini"}:
+                continue
+            if fn.endswith((".tmp", ".log")):
+                continue
+            out.append(r.replace(os.sep, "/"))
+    return sorted(out)
+
+
+def make_zip(target, prefix, files, extra_dirs=()):
+    if os.path.exists(target):
+        os.remove(target)
+    count = 0
+    total = 0
+    with zipfile.ZipFile(target, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
+        for rel in files:
+            src = os.path.join(ROOT, rel.replace("/", os.sep))
+            if not os.path.isfile(src):
+                print(f"  跳过（不存在）: {rel}")
+                continue
+            arc = f"{prefix}/{rel}" if prefix else rel
+            with open(src, "rb") as f:
+                data = f.read()
+            z.writestr(arc, data)
+            count += 1
+            total += len(data)
+        # 空目录占位，解压后 data/ 就存在
+        for d in extra_dirs:
+            z.writestr(f"{prefix}/{d}/" if prefix else f"{d}/", b"")
+    size = os.path.getsize(target)
+    print(f"  {os.path.basename(target)}")
+    print(f"    文件 {count} 个，原始 {total/1024/1024:.2f} MB，压缩后 {size/1024/1024:.2f} MB")
+    return target
+
+
+def main():
+    if os.path.exists(BUILD):
+        shutil.rmtree(BUILD, ignore_errors=True)
+    os.makedirs(BUILD, exist_ok=True)
+
+    print("打使用版…")
+    make_zip(os.path.join(DESKTOP, "墨语-使用版.zip"), "墨语", USER_FILES, extra_dirs=["data"])
+
+    print("\n打开发版…")
+    make_zip(os.path.join(DESKTOP, "墨语-开发版.zip"), "moyu-reader", collect_dev(), extra_dirs=["data"])
+
+    print("\n完成。两个包都在桌面。")
+
+
+if __name__ == "__main__":
+    main()
