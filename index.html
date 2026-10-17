@@ -204,9 +204,38 @@
       </section>
 
       <section class="set-group">
+        <h4>检查更新</h4>
+        <p class="hint" id="updateStatus">正在检测…</p>
+        <label class="check-row"><input type="checkbox" id="autoUpdateToggle"><span>打开软件时自动检查更新（连 GitHub 仓库，只比对程序文件）</span></label>
+        <div class="btn-row">
+          <button class="btn" id="btnCheckUpdate">立即检查</button>
+        </div>
+      </section>
+
+      <section class="set-group">
         <h4>支持格式</h4>
         <p class="hint">EPUB、PDF（含扫描件 OCR 层缺失时的图像回退）、DOCX、TXT、Markdown、HTML、FB2、RTF、MOBI / AZW / AZW3 / PRC。带 DRM 的文件无法解析，请使用无保护的版本。</p>
       </section>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════ 更新弹窗 ══════════ -->
+<div class="modal" id="updateModal">
+  <div class="modal-card">
+    <div class="modal-head">
+      <h2>发现新版本</h2>
+      <button class="panel-close" id="updateClose" aria-label="关闭">✕</button>
+    </div>
+    <div class="modal-body">
+      <p class="hint" id="updateSummary">—</p>
+      <div class="update-file-list" id="updateFileList"></div>
+      <div class="progress-bar"><i id="updateBar"></i></div>
+      <p class="hint" id="updateHint"></p>
+    </div>
+    <div class="modal-foot">
+      <button class="btn" id="btnUpdateLater">稍后再说</button>
+      <button class="btn primary" id="btnUpdateNow">立即更新</button>
     </div>
   </div>
 </div>

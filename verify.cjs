@@ -343,5 +343,7 @@ async function evalJs(c, expr) {
 
   console.log('\n全部验证步骤执行完毕');
   c.close();
-  process.exit(0);
-})().catch(e => { console.error('验证出错:', e.message); process.exit(1); });
+  // 用 exitCode 而非 exit()：stdout 重定向到文件时是异步写，
+  // process.exit 会丢掉还没 flush 的输出
+  process.exitCode = 0;
+})().catch(e => { console.error('验证出错:', e.message); process.exitCode = 1; });

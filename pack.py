@@ -29,6 +29,7 @@ USER_FILES = [
     "js/ai.js",
     "js/app.js",
     "js/db.js",
+    "js/updater.js",
     "js/engine.js",
     "js/parsers.js",
     "lib/LICENSE.md",

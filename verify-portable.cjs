@@ -12,6 +12,7 @@ const BASE = 'http://127.0.0.1:' + (process.env.CDP_PORT || 9222);
 const PAGE = 'http://127.0.0.1:' + (process.env.APP_PORT || 8899) + '/';
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 
 const DATA = process.env.DATA_DIR || path.join(__dirname, 'data');
 
@@ -191,11 +192,75 @@ function check(name, cond, detail) {
   fs.writeFileSync('screenshots/portable-shelf.png', Buffer.from(shot2.data, 'base64'));
   check('截图已保存', true, 'screenshots/portable-*.png');
 
+  console.log('\n=== 10. 自动更新端点 ===');
+  {
+    const pkg = await fetch(PAGE + 'api/package', { cache: 'no-store' }).then(r => r.json());
+    check('/api/package 返回清单', pkg.ok === true && Array.isArray(pkg.files) && pkg.files.length > 0, `files=${pkg.files?.length}`);
+    check('清单不含 data/ 用户数据', !(pkg.files || []).some(f => f.path.startsWith('data/')));
+    check('清单不含 .git/ 与截图目录', !(pkg.files || []).some(f => f.path.startsWith('.git/') || f.path.startsWith('screenshots/')));
+    check('清单含核心程序文件', ['index.html', 'server.ps1', 'js/db.js', 'js/updater.js'].every(p => (pkg.files || []).some(f => f.path === p)));
+
+    // 摘要算法必须与 git blob 一致：sha1("blob <长度>\0" + 内容)
+    const target = (pkg.files || []).find(f => f.path === 'js/db.js');
+    let shaOk = false;
+    if (target) {
+      const bytes = fs.readFileSync(path.join(__dirname, 'js/db.js'));
+      const h = crypto.createHash('sha1');
+      h.update(Buffer.concat([Buffer.from(`blob ${bytes.length}\0`), bytes]));
+      shaOk = h.digest('hex') === target.sha;
+    }
+    check('js/db.js 摘要与本地文件复算一致（git blob 算法）', shaOk, target?.sha?.slice(0, 12));
+
+    const post = (p, sha, content) => fetch(PAGE + 'api/update/file', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ path: p, sha, content })
+    }).then(r => r.status);
+
+    const mPkg = await fetch(PAGE + 'api/package', { method: 'POST' }).then(r => r.status);
+    check('POST /api/package 返回 405', mPkg === 405, `HTTP ${mPkg}`);
+    const mUpd = await fetch(PAGE + 'api/update/file').then(r => r.status);
+    check('GET /api/update/file 返回 405', mUpd === 405, `HTTP ${mUpd}`);
+
+    for (const p of ['../evil.js', '..\\evil.js', 'data/library.json', '.git/config', 'C:/Windows/win.ini', 'js/../../evil.js']) {
+      const stx = await post(p, '0'.repeat(40), 'e30=');
+      check(`拒写非法路径「${p}」`, stx === 400, `HTTP ${stx}`);
+    }
+
+    const stSha = await post('js/__verify_tmp.js', '0'.repeat(40), Buffer.from('x').toString('base64'));
+    check('sha 不匹配拒写', stSha === 400, `HTTP ${stSha}`);
+    check('拒写后未产生文件', !fs.existsSync(path.join(__dirname, 'js/__verify_tmp.js')));
+
+    // 合法路径写入 → 字节级校验 → 清单即时反映 → 清理
+    const rel = 'js/__verify_update_tmp.js';
+    const abs = path.join(__dirname, rel);
+    const content = Buffer.from('// verify-portable 自动更新端点临时文件\r\nconsole.log("ok");\r\n', 'utf8');
+    const h2 = crypto.createHash('sha1');
+    h2.update(Buffer.concat([Buffer.from(`blob ${content.length}\0`), content]));
+    const sha2 = h2.digest('hex');
+    const stOk = await post(rel, sha2, content.toString('base64'));
+    check('合法更新写入成功', stOk === 200, `HTTP ${stOk}`);
+    check('落盘字节与提交内容完全一致', fs.existsSync(abs) && Buffer.compare(fs.readFileSync(abs), content) === 0);
+    const pkg2 = await fetch(PAGE + 'api/package', { cache: 'no-store' }).then(r => r.json());
+    check('写入后清单即时反映新文件', (pkg2.files || []).some(f => f.path === rel && f.sha === sha2));
+    if (fs.existsSync(abs)) fs.unlinkSync(abs);
+    const pkg3 = await fetch(PAGE + 'api/package', { cache: 'no-store' }).then(r => r.json());
+    check('清理后清单不再包含临时文件', !(pkg3.files || []).some(f => f.path === rel));
+
+    const stFin = await fetch(PAGE + 'api/update/finish', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ files: [rel] })
+    }).then(r => r.status);
+    check('POST /api/update/finish 正常', stFin === 200, `HTTP ${stFin}`);
+    check('更新日志写入 data/update-log.json', fs.existsSync(path.join(DATA, 'update-log.json')));
+  }
+
   console.log('\n' + '='.repeat(52));
   console.log(`通过 ${pass.length} 项，失败 ${fail.length} 项`);
   if (fail.length) { console.log('失败项：'); fail.forEach(f => console.log('  - ' + f)); }
   console.log('='.repeat(52));
 
   c.close();
-  process.exit(fail.length ? 1 : 0);
-})().catch(e => { console.error('验证出错:', e.message); process.exit(1); });
+  // 用 exitCode 而非 exit()：stdout 重定向到文件时是异步写，
+  // process.exit 会丢掉还没 flush 的输出
+  process.exitCode = fail.length ? 1 : 0;
+})().catch(e => { console.error('验证出错:', e.message); process.exitCode = 1; });

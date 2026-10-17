@@ -6,6 +6,7 @@ import * as db from './db.js';
 import { parseBook, htmlToText } from './parsers.js';
 import { Engine } from './engine.js';
 import * as AI from './ai.js';
+import * as updater from './updater.js';
 
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -38,6 +39,9 @@ async function init() {
     await refreshShelf();
     await updateStorageInfo();
     registerSW();
+    // 自动更新模块：只在服务器模式下真正工作，内部自行容错，不影响启动
+    window.__updater = updater;
+    updater.init({ toast }).catch(e => console.warn('更新模块初始化失败', e));
   } catch (e) {
     console.error('初始化失败', e);
     toast('初始化时出现问题：' + e.message, 'error');
@@ -527,6 +531,7 @@ async function aiFixPage() {
 /* ============================================================== 设置 */
 
 async function openSettings() {
+  updater.refreshStatus().catch(() => {});
   const cfg = await AI.getConfig();
   $('#aiBaseUrl').value = cfg.baseUrl || '';
   $('#aiApiKey').value = cfg.apiKey || '';

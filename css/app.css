@@ -571,3 +571,38 @@ html.is-dark .ai-input button { --btn-on-fg: #10131a; }
   .reader-top, .reader-bottom, .side-panel, .page-nav, .sel-bubble { display: none !important; }
   .reader-body { column-width: auto; height: auto; overflow: visible; background: #fff; }
 }
+
+/* ══════════════════════════════════════════════════ 自动更新 ══ */
+
+.update-banner {
+  position: fixed; right: 22px; bottom: 22px; z-index: 350;
+  display: flex; align-items: center; gap: 10px;
+  padding: 11px 16px; border-radius: 999px;
+  background: var(--bg-2); border: 1px solid var(--accent);
+  box-shadow: var(--shadow); font-size: 13px;
+  animation: banner-in .3s cubic-bezier(.4, 0, .2, 1);
+  max-width: calc(100vw - 44px);
+}
+@keyframes banner-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+.update-banner .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
+.update-banner button { color: var(--accent); font-size: 12.5px; white-space: nowrap; }
+.update-banner button:hover { text-decoration: underline; }
+
+.update-file-list {
+  max-height: 240px; overflow-y: auto;
+  border: 1px solid var(--line); border-radius: 9px;
+  padding: 6px 12px; margin: 10px 0;
+  font-size: 12.5px; background: var(--bg);
+}
+.update-file-list .row { display: flex; align-items: center; gap: 9px; padding: 5px 0; border-bottom: 1px solid var(--line); }
+.update-file-list .row:last-child { border-bottom: none; }
+.update-file-list .row .p { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-family: ui-monospace, Consolas, monospace; font-size: 12px; }
+.update-file-list .row .s { color: var(--faint); font-size: 11px; white-space: nowrap; }
+.update-file-list .badge { font-size: 10.5px; padding: 1px 8px; border-radius: 999px; flex-shrink: 0; }
+.update-file-list .badge.add { background: color-mix(in srgb, #3a9d5c 16%, transparent); color: #2f7d4a; }
+.update-file-list .badge.update { background: color-mix(in srgb, var(--accent) 16%, transparent); color: var(--accent); }
+
+.check-row { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--muted); margin: 4px 0 10px; cursor: pointer; }
+.check-row input { width: auto; margin: 0; accent-color: var(--accent); }
+
+.modal-foot { display: flex; gap: 9px; padding: 14px 22px; border-top: 1px solid var(--line); justify-content: flex-end; }
