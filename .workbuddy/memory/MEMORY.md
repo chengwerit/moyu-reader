@@ -70,11 +70,19 @@ AI 助手接手本项目时先读这份文件，比读代码更快建立正确�
 
 - profile 里常驻 `http_proxy`。Node/脚本访问 `127.0.0.1` 会失败，
   用 `env -u http_proxy -u https_proxy -u HTTP_PROXY -u HTTPS_PROXY <cmd>`
+  （本机 Bash 里 `env -u` 会吞 stdout，改用 shell 内置 `unset`）
 - **后台进程**（服务器、调试浏览器）必须用后台任务方式保持，
   普通 shell 的 `&` 会随命令结束被回收
 - **Node 里 spawn 子进程会 EBUSY**（`spawnSync git/curl EBUSY`），
   涉及外部命令的任务改用 Bash
 - 含中文的路径不要硬编码进脚本，用 `$PSScriptRoot` 动态定位
+- **行尾检测别用 `grep -c $'\r$'`** —— 本机 Bash 工具里该模式退化，
+  测出来个个"全 CRLF"。一律用 Python 字节计数（`count(b'\r\n')` vs `count(b'\n')`）
+- **本机启动的 Edge 要加 `--disable-features=DnsOverHttps`** ——
+  否则默认 DoH 解析器不可达，页面所有外网 fetch 挂起，浏览器 E2E 全假超时
+- **api.github.com 直连即通**（~0.4s）；13075/7890 代理端口并未监听
+- **verify.cjs 是 IDB 模式脚本**，在 server.ps1 文件存储模式下会永久挂起；
+  要跑它就另起静态服务（`python -m http.server 8898` + `APP_PORT=8898`）
 
 ## GitHub 推送
 
@@ -86,19 +94,35 @@ Token 用 `git credential fill` 取，经环境变量传入，全程不落盘。
 **推完必须校验字节**：用 API 取回 base64 解码，确认 BOM、行尾、中文完好。
 不校验的话编码可能在传输中损坏，用户下载后双击没反应且难查。
 
+## 自动更新（2026-10-17 上线）
+
+`server.ps1` 三个端点 + `js/updater.js`：联网打开时静默检查 GitHub 仓库，
+内容级比对（git blob sha，不维护版本号），用户确认后下载落盘。
+
+- 通道走 `api.github.com`（浏览器 CORS 友好）；raw 域名与 git 协议均不稳
+- 落盘边界服务端强制：只写包内相对路径，禁 `data/` 与 `.git/`，
+  写入前验 sha，覆盖前备份 `data/.update-backup/`，临时文件 + `Move-Item -Force`
+- **更新面排除 `.workbuddy/`** —— 那是项目上下文，不参与更新
+- 涉及 `server.ps1` / `.bat` 的更新完成后提示重启，其余刷新页面即可
+- E2E 脚本在 `.workbuddy/tmp/e2e-update.cjs`（CDP_PORT=9223 的 Edge 实例）
+
 ## 验证工作流
 
 改完代码必须验证，两套脚本：
 
 ```bash
-node verify.cjs           # 12 项功能检查
-node verify-portable.cjs  # 18 项便携性与落盘检查
+node verify.cjs           # 12 项功能检查（需 IDB 模式环境）
+node verify-portable.cjs  # 39 项便携性、落盘与自动更新端点检查
 ```
 
 支持环境变量：`CDP_PORT`、`APP_PORT`、`DATA_DIR`。
 
 测试脚本用固定 `sleep` 会因冷启动（CDN 依赖加载慢）假失败，
 已改为 `waitFor()` 轮询 —— 新增等待请沿用这个方式。
+
+**注意**：verify-portable 的书籍计数断言按干净 `data/` 写 1，
+跑过几轮后书架上会累积测试书（便携测试 / 测试书籍），
+届时那 4 项计数断言会误报，不是应用 bug。
 
 ## 待办与已知限制
 
