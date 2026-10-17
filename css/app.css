@@ -118,6 +118,12 @@ html.is-dark .btn.primary:hover { filter: brightness(1.14); }
 }
 .quote-mark { color: var(--accent); font-size: 20px; vertical-align: -2px; }
 
+/* 每日一言：可点击换句 */
+#dailyQuote { cursor: pointer; transition: opacity .18s ease, color .18s ease; border-bottom: 1px dashed transparent; }
+#dailyQuote:hover { color: var(--text); border-bottom-color: var(--accent); }
+#dailyQuote.quote-fade { opacity: .35; }
+.quote-from { margin-left: 10px; font-size: 12.5px; opacity: .75; }
+
 .shelf-grid {
   flex: 1; overflow-y: auto;
   padding: 20px 28px 40px;

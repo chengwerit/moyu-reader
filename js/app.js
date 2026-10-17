@@ -7,6 +7,7 @@ import { parseBook, htmlToText } from './parsers.js';
 import { Engine } from './engine.js';
 import * as AI from './ai.js';
 import * as updater from './updater.js';
+import * as daily from './daily.js';
 
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -34,7 +35,7 @@ async function init() {
     engine.bindScroll();
     engine.bindResize();
     bindEvents();
-    showQuote();
+    daily.init({ toast }).catch(e => console.warn('每日一言初始化失败', e));
     await applySettings();
     await refreshShelf();
     await updateStorageInfo();
@@ -626,32 +627,6 @@ async function requestPersist() {
   if (!navigator.storage?.persist) { toast('当前浏览器不支持持久化', 'warn'); return; }
   const ok = await navigator.storage.persist();
   toast(ok ? '已申请持久化存储，数据不会被自动清理' : '浏览器未授予持久化权限', ok ? 'success' : 'warn');
-}
-
-/* ============================================================== 每日一句 */
-
-function showQuote() {
-  const quotes = [
-    '读书的目的，不在于占有知识，而在于让知识占有你。',
-    '所谓阅读，是把一本书的时间偷过来据为己有。',
-    '慢一点读，才能尝出字句里藏着的重量。',
-    '书页翻动的声音，是最安静的掌声。',
-    '我们读过的书，都会在某个瞬间替我们说话。',
-    '真正的远方，是从第一行字开始的地方。',
-    '不着急读完，才容易记住。',
-    '纸上的灯火，照见比窗外更长的夜。'
-  ];
-  const saved = localStorage.getItem('moyu-quote-date');
-  const today = new Date().toDateString();
-  let text;
-  if (saved === today) {
-    text = localStorage.getItem('moyu-quote');
-  } else {
-    text = quotes[Math.floor(Math.random() * quotes.length)];
-    localStorage.setItem('moyu-quote-date', today);
-    localStorage.setItem('moyu-quote', text);
-  }
-  $('#dailyQuote').textContent = text;
 }
 
 /* ============================================================== 提示 */

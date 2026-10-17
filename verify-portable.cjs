@@ -198,7 +198,7 @@ function check(name, cond, detail) {
     check('/api/package 返回清单', pkg.ok === true && Array.isArray(pkg.files) && pkg.files.length > 0, `files=${pkg.files?.length}`);
     check('清单不含 data/ 用户数据', !(pkg.files || []).some(f => f.path.startsWith('data/')));
     check('清单不含 .git/ 与截图目录', !(pkg.files || []).some(f => f.path.startsWith('.git/') || f.path.startsWith('screenshots/')));
-    check('清单含核心程序文件', ['index.html', 'server.ps1', 'js/db.js', 'js/updater.js'].every(p => (pkg.files || []).some(f => f.path === p)));
+    check('清单含核心程序文件', ['index.html', 'server.ps1', 'js/db.js', 'js/updater.js', 'js/daily.js'].every(p => (pkg.files || []).some(f => f.path === p)));
 
     // 摘要算法必须与 git blob 一致：sha1("blob <长度>\0" + 内容)
     const target = (pkg.files || []).find(f => f.path === 'js/db.js');

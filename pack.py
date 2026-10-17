@@ -30,6 +30,7 @@ USER_FILES = [
     "js/app.js",
     "js/db.js",
     "js/updater.js",
+    "js/daily.js",
     "js/engine.js",
     "js/parsers.js",
     "lib/LICENSE.md",
