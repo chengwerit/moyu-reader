@@ -19,6 +19,7 @@ BUILD = os.path.join(ROOT, ".pack")
 # 使用版：只含使用者与协作者需要的
 USER_FILES = [
     "启动墨语.bat",
+    "LICENSE",               # MIT 要求分发时附上许可证副本
     "使用说明.md",
     "项目说明.md",          # 想知道怎么改、看结构的协作者会需要
     "index.html",
